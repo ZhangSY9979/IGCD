@@ -12,4 +12,7 @@
 - Tiny ImageNet
 
 ## Requirement
-
+- torch==1.12.1
+- torchvision==0.13.1
+- numpy==1.26.2
+- pillow==10.1.0
