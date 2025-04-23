@@ -4,7 +4,6 @@
 
 ## Set up
 - using `main_xxx.py` to run experiments.
-- training result can be found in folder `./result`.
 
 ## Dataset
 - CIFAR-10
