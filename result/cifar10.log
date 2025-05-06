@@ -1,0 +1,151 @@
+=================================================================
+========================== seq-cifar10 nt: 0.005 ==========================
+=================================================================
+
+Namespace(root='/media/zhangsiyu/data/', transform='pytorch', featureNet='resnet18', nt=4, t_c_arr={0: (([0, 1, 2, 3], (0, 0.87), '0-70'),), 1: (([0, 1, 2, 3], (0.87, 0.95), '0-70'), ([4, 5], (0, 0.7), '70-80')), 2: (([0, 1, 2, 3], (0.95, 0.97), '0-70'), ([4, 5], (0.7, 0.9), '70-80'), ([6, 7], (0, 0.9), '89-90')), 3: (([0, 1, 2, 3], (0.97, 1.0), '0-70'), ([4, 5], (0.9, 1.0), '70-80'), ([6, 7], (0.9, 1.0), '80-90'), ([8, 9], (0, 1.0), '90-100'))}, validation=False, class_shuffle=False, task_shuffle=False, backbone='None', n_epochs=100, learning_rate=None, batch_size=64, print_freq=10, img_dir='img/', seed=None, repeat=1, LOG_DIR='./logs', dataset='seq-cifar10', sz_embedding=512, gpu_id=0, nb_workers=0, basemodel='resnet18', loss='Proxy_Anchor', optimizer='adamw', lr=5e-05, weight_decay=0.01, lr_decay_step=5, lr_decay_gamma=0.5, alpha=32, mrg=0.1, warm=5, bn_freeze=True, l2_norm=True, remark='', use_split_modlue=True, use_GM_clustering=True, exp='0', device=device(type='cuda'), pretrain_lr=0.005, VaDE_lr=1e-09, pretrain_epochs=50, VaDE_epochs=30, root1='data/', ratio_first=0.3, ratio=1, num=0, ratio_bate=0.3, lambda1=10, lambda2=20, prato=0, kld_ratio=0.5, eps=1, embedding_dim=250, r_inter=1500, r_intra=800, isPseudo=True, patience=50, pretrain=True, pretrained_path='weights/pretrained_parameter_softmax——cifar10.pth', model1='model/gcd', nf=64, isPrint=False, model='gcdvaecifar10', k=2)
+================================= repeat 1/1 =================================
+Files already downloaded and verified
+Files already downloaded and verified
+feature already extracted
+/home/zhangsiyu/anaconda3/envs/pytorch/lib/python3.9/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/zhangsiyu/anaconda3/envs/pytorch/lib/python3.9/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+epoch: 10	 task: 0 	 category: 0 	 loss: 9.798020 	 posloss: 498.992523 	 negloss: 50.669342 	 kldloss: 74.786095 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 0 	 loss: 6.438178 	 posloss: 303.407410 	 negloss: 30.700958 	 kldloss: 79.000359 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 0 	 loss: 4.586069 	 posloss: 197.798767 	 negloss: 17.167418 	 kldloss: 78.340836 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 0 	 loss: 3.472678 	 posloss: 131.619492 	 negloss: 12.805573 	 kldloss: 76.766441 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 0 	 loss: 2.770412 	 posloss: 95.438301 	 negloss: 9.183828 	 kldloss: 72.817047 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 0 	 loss: 2.392465 	 posloss: 73.326485 	 negloss: 9.553306 	 kldloss: 69.848038 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 0 	 loss: 2.003281 	 posloss: 54.050724 	 negloss: 6.122625 	 kldloss: 67.509079 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 0 	 loss: 1.727322 	 posloss: 39.413231 	 negloss: 6.425652 	 kldloss: 64.692581 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 0 	 loss: 1.629652 	 posloss: 34.644592 	 negloss: 6.440171 	 kldloss: 63.173038 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 0 	 loss: 1.525452 	 posloss: 28.833038 	 negloss: 6.951008 	 kldloss: 61.470848 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 1 	 loss: 4.978927 	 posloss: 226.335724 	 negloss: 22.541872 	 kldloss: 69.422905 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 1 	 loss: 2.861198 	 posloss: 111.418793 	 negloss: 9.830858 	 kldloss: 61.394634 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 1 	 loss: 2.121883 	 posloss: 72.382103 	 negloss: 7.345927 	 kldloss: 55.555466 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 1 	 loss: 1.611128 	 posloss: 48.907784 	 negloss: 3.662797 	 kldloss: 50.761600 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 1 	 loss: 1.327782 	 posloss: 33.873241 	 negloss: 3.147118 	 kldloss: 48.240051 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 1 	 loss: 1.170224 	 posloss: 25.713934 	 negloss: 4.228801 	 kldloss: 44.853218 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 1 	 loss: 0.992743 	 posloss: 18.419683 	 negloss: 1.990357 	 kldloss: 43.099823 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 1 	 loss: 0.931582 	 posloss: 15.867669 	 negloss: 2.392724 	 kldloss: 41.365135 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 1 	 loss: 0.865509 	 posloss: 13.743225 	 negloss: 2.198355 	 kldloss: 39.310566 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 1 	 loss: 0.802063 	 posloss: 10.410801 	 negloss: 2.477952 	 kldloss: 38.464928 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 2 	 loss: 12.812657 	 posloss: 681.925842 	 negloss: 52.824730 	 kldloss: 86.894600 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 2 	 loss: 9.002622 	 posloss: 446.149811 	 negloss: 39.800510 	 kldloss: 92.073608 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 2 	 loss: 6.792553 	 posloss: 315.662140 	 negloss: 25.469112 	 kldloss: 94.110420 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 2 	 loss: 5.015635 	 posloss: 208.853653 	 negloss: 17.333031 	 kldloss: 94.951393 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 2 	 loss: 4.007228 	 posloss: 150.286316 	 negloss: 13.920347 	 kldloss: 92.255463 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 2 	 loss: 3.303274 	 posloss: 107.561798 	 negloss: 13.076816 	 kldloss: 89.913620 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 2 	 loss: 2.825626 	 posloss: 82.283508 	 negloss: 11.590799 	 kldloss: 86.766891 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 2 	 loss: 2.411516 	 posloss: 59.631424 	 negloss: 9.071667 	 kldloss: 84.420807 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 2 	 loss: 2.165186 	 posloss: 49.805496 	 negloss: 8.023268 	 kldloss: 80.956955 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 2 	 loss: 2.014422 	 posloss: 41.886562 	 negloss: 7.955684 	 kldloss: 79.667824 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 3 	 loss: 10.227885 	 posloss: 521.574097 	 negloss: 48.369358 	 kldloss: 86.014252 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 3 	 loss: 7.168143 	 posloss: 339.691193 	 negloss: 32.177071 	 kldloss: 88.717270 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 3 	 loss: 5.221495 	 posloss: 223.502930 	 negloss: 22.449244 	 kldloss: 88.822884 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 3 	 loss: 3.986350 	 posloss: 151.111588 	 negloss: 17.381865 	 kldloss: 88.465218 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 3 	 loss: 3.389095 	 posloss: 117.982964 	 negloss: 13.569001 	 kldloss: 85.455696 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 3 	 loss: 2.675779 	 posloss: 80.771172 	 negloss: 9.908022 	 kldloss: 80.720680 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 3 	 loss: 2.507276 	 posloss: 70.809708 	 negloss: 10.568750 	 kldloss: 78.471397 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 3 	 loss: 2.074120 	 posloss: 49.157475 	 negloss: 7.840682 	 kldloss: 75.128273 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 3 	 loss: 1.861565 	 posloss: 38.902779 	 negloss: 7.656880 	 kldloss: 72.630348 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 3 	 loss: 1.656112 	 posloss: 30.614098 	 negloss: 6.018675 	 kldloss: 69.724281 	 maxloss: 0.000000 	 pseudoloss: nan
+(4000, 1000)
+类别 0 AOC: 0.9909813333333334
+类别 1 AOC: 0.9976023333333334
+类别 2 AOC: 0.9814833333333335
+类别 3 AOC: 0.989565
+first stage all_acc: 0.947
+stage: 0
+cluster,task 0 : 0.946
+Training the autoencoder...
+Saving weights.
+Training VaDE...
+reset dataset with prev_categories [0, 1, 2, 3]
+==========	 task: 1	 categories: [4, 5] 	==========
+epoch: 10	 task: 1 	 category: 4 	 loss: 70.161020 	 posloss: 1286.429810 	 negloss: 50.562645 	 kldloss: 138.140335 	 maxloss: 0.000000 	 pseudoloss: 75.580536
+epoch: 20	 task: 1 	 category: 4 	 loss: 35.263312 	 posloss: 724.747070 	 negloss: 102.751610 	 kldloss: 165.722412 	 maxloss: 0.000000 	 pseudoloss: 25.728409
+epoch: 30	 task: 1 	 category: 4 	 loss: 23.263403 	 posloss: 508.571594 	 negloss: 103.596115 	 kldloss: 165.362289 	 maxloss: 0.000000 	 pseudoloss: 4.579238
+epoch: 40	 task: 1 	 category: 4 	 loss: 17.951508 	 posloss: 404.643921 	 negloss: 78.484924 	 kldloss: 155.559189 	 maxloss: 0.000000 	 pseudoloss: 7.376681
+epoch: 50	 task: 1 	 category: 4 	 loss: 14.242809 	 posloss: 330.912323 	 negloss: 68.910355 	 kldloss: 153.479675 	 maxloss: 0.000000 	 pseudoloss: 9.097271
+epoch: 60	 task: 1 	 category: 4 	 loss: 11.370364 	 posloss: 275.748627 	 negloss: 53.223148 	 kldloss: 149.589050 	 maxloss: 0.000000 	 pseudoloss: 4.295401
+epoch: 70	 task: 1 	 category: 4 	 loss: 8.809006 	 posloss: 218.772614 	 negloss: 35.070789 	 kldloss: 144.089386 	 maxloss: 0.000000 	 pseudoloss: 3.013836
+epoch: 80	 task: 1 	 category: 4 	 loss: 7.486458 	 posloss: 188.306183 	 negloss: 28.996521 	 kldloss: 140.884567 	 maxloss: 0.000000 	 pseudoloss: 4.922215
+epoch: 90	 task: 1 	 category: 4 	 loss: 6.089607 	 posloss: 151.020432 	 negloss: 23.467243 	 kldloss: 135.294510 	 maxloss: 0.000000 	 pseudoloss: 3.139574
+epoch: 100	 task: 1 	 category: 4 	 loss: 5.331600 	 posloss: 128.466537 	 negloss: 21.967953 	 kldloss: 132.524521 	 maxloss: 0.000000 	 pseudoloss: 4.647398
+epoch: 10	 task: 1 	 category: 5 	 loss: 67.718245 	 posloss: 1151.688965 	 negloss: 50.148556 	 kldloss: 106.029694 	 maxloss: 0.000000 	 pseudoloss: 77.319328
+epoch: 20	 task: 1 	 category: 5 	 loss: 37.851384 	 posloss: 702.480408 	 negloss: 116.777573 	 kldloss: 130.542770 	 maxloss: 0.000000 	 pseudoloss: 29.069384
+epoch: 30	 task: 1 	 category: 5 	 loss: 28.335010 	 posloss: 534.252014 	 negloss: 131.256943 	 kldloss: 138.113892 	 maxloss: 0.000000 	 pseudoloss: 32.984482
+epoch: 40	 task: 1 	 category: 5 	 loss: 21.434348 	 posloss: 421.552307 	 negloss: 92.227783 	 kldloss: 138.488144 	 maxloss: 0.000000 	 pseudoloss: 25.700104
+epoch: 50	 task: 1 	 category: 5 	 loss: 17.134815 	 posloss: 347.337524 	 negloss: 77.460442 	 kldloss: 144.556534 	 maxloss: 0.000000 	 pseudoloss: 13.507477
+epoch: 60	 task: 1 	 category: 5 	 loss: 14.227904 	 posloss: 289.524139 	 negloss: 62.785141 	 kldloss: 145.289047 	 maxloss: 0.000000 	 pseudoloss: 7.856255
+epoch: 70	 task: 1 	 category: 5 	 loss: 11.692838 	 posloss: 245.512619 	 negloss: 38.847252 	 kldloss: 143.871826 	 maxloss: 0.000000 	 pseudoloss: 20.294041
+epoch: 80	 task: 1 	 category: 5 	 loss: 9.871795 	 posloss: 211.536026 	 negloss: 34.687698 	 kldloss: 141.645905 	 maxloss: 0.000000 	 pseudoloss: 8.948844
+epoch: 90	 task: 1 	 category: 5 	 loss: 8.829440 	 posloss: 187.442886 	 negloss: 32.741253 	 kldloss: 136.413300 	 maxloss: 0.000000 	 pseudoloss: 12.687210
+epoch: 100	 task: 1 	 category: 5 	 loss: 7.192330 	 posloss: 151.487762 	 negloss: 26.961649 	 kldloss: 135.274673 	 maxloss: 0.000000 	 pseudoloss: 8.959937
+stage: 1
+cluster,task 0 : 0.8565
+cluster,task  1  : 0.604
+cluster,all novel : 0.604
+Training the autoencoder...
+Saving weights.
+Training VaDE...
+reset dataset with prev_categories [0, 1, 2, 3, 4, 5]
+==========	 task: 2	 categories: [6, 7] 	==========
+epoch: 10	 task: 2 	 category: 6 	 loss: 77.256535 	 posloss: 1221.124634 	 negloss: 10.555951 	 kldloss: 158.857895 	 maxloss: 3469.573730 	 pseudoloss: 73.347473
+epoch: 20	 task: 2 	 category: 6 	 loss: 36.502534 	 posloss: 723.899292 	 negloss: 36.997883 	 kldloss: 193.993576 	 maxloss: 1341.052368 	 pseudoloss: 28.450331
+epoch: 30	 task: 2 	 category: 6 	 loss: 22.138251 	 posloss: 505.967133 	 negloss: 33.193840 	 kldloss: 190.588455 	 maxloss: 660.878845 	 pseudoloss: 21.784235
+epoch: 40	 task: 2 	 category: 6 	 loss: 15.193029 	 posloss: 375.233337 	 negloss: 29.837250 	 kldloss: 178.830872 	 maxloss: 354.823029 	 pseudoloss: 31.312773
+epoch: 50	 task: 2 	 category: 6 	 loss: 10.734023 	 posloss: 286.065857 	 negloss: 31.021639 	 kldloss: 168.661652 	 maxloss: 196.222977 	 pseudoloss: 5.201349
+epoch: 60	 task: 2 	 category: 6 	 loss: 8.492652 	 posloss: 229.681412 	 negloss: 21.072088 	 kldloss: 157.938889 	 maxloss: 123.646736 	 pseudoloss: 9.501778
+epoch: 70	 task: 2 	 category: 6 	 loss: 7.696126 	 posloss: 199.636902 	 negloss: 18.918831 	 kldloss: 147.428879 	 maxloss: 102.829590 	 pseudoloss: 28.631281
+epoch: 80	 task: 2 	 category: 6 	 loss: 5.871836 	 posloss: 155.990662 	 negloss: 11.909028 	 kldloss: 141.231537 	 maxloss: 53.063988 	 pseudoloss: 11.676504
+epoch: 90	 task: 2 	 category: 6 	 loss: 5.305009 	 posloss: 136.033188 	 negloss: 12.923335 	 kldloss: 135.961426 	 maxloss: 47.912952 	 pseudoloss: 8.329796
+epoch: 100	 task: 2 	 category: 6 	 loss: 4.575305 	 posloss: 113.146515 	 negloss: 16.938131 	 kldloss: 129.395889 	 maxloss: 28.841635 	 pseudoloss: 4.438739
+epoch: 10	 task: 2 	 category: 7 	 loss: 63.831009 	 posloss: 1081.671631 	 negloss: 28.808683 	 kldloss: 149.373337 	 maxloss: 2732.934570 	 pseudoloss: 80.384857
+epoch: 20	 task: 2 	 category: 7 	 loss: 28.743993 	 posloss: 610.505554 	 negloss: 58.758915 	 kldloss: 172.838974 	 maxloss: 965.596863 	 pseudoloss: 22.314804
+epoch: 30	 task: 2 	 category: 7 	 loss: 16.186816 	 posloss: 404.479675 	 negloss: 41.811790 	 kldloss: 161.386795 	 maxloss: 418.234070 	 pseudoloss: 9.012776
+epoch: 40	 task: 2 	 category: 7 	 loss: 11.440394 	 posloss: 304.033051 	 negloss: 31.092836 	 kldloss: 149.093338 	 maxloss: 231.229263 	 pseudoloss: 17.414747
+epoch: 50	 task: 2 	 category: 7 	 loss: 8.971426 	 posloss: 239.416626 	 negloss: 43.260658 	 kldloss: 139.893753 	 maxloss: 144.644974 	 pseudoloss: 6.055799
+epoch: 60	 task: 2 	 category: 7 	 loss: 7.074169 	 posloss: 185.573822 	 negloss: 29.404192 	 kldloss: 129.141479 	 maxloss: 85.070282 	 pseudoloss: 22.681997
+epoch: 70	 task: 2 	 category: 7 	 loss: 4.911460 	 posloss: 134.412979 	 negloss: 11.165250 	 kldloss: 122.524513 	 maxloss: 40.593727 	 pseudoloss: 5.201577
+epoch: 80	 task: 2 	 category: 7 	 loss: 4.659560 	 posloss: 116.430054 	 negloss: 24.143169 	 kldloss: 114.930840 	 maxloss: 31.930155 	 pseudoloss: 9.587376
+epoch: 90	 task: 2 	 category: 7 	 loss: 3.602297 	 posloss: 90.378143 	 negloss: 8.400187 	 kldloss: 110.462158 	 maxloss: 20.157181 	 pseudoloss: 1.408830
+epoch: 100	 task: 2 	 category: 7 	 loss: 3.309933 	 posloss: 81.183327 	 negloss: 5.223305 	 kldloss: 106.127747 	 maxloss: 14.282263 	 pseudoloss: 5.135317
+stage: 2
+cluster,task 0 : 0.80375
+cluster,task  1  : 0.475
+cluster,task  2  : 0.7795
+cluster,all novel : 0.62725
+Training the autoencoder...
+Saving weights.
+Training VaDE...
+reset dataset with prev_categories [0, 1, 2, 3, 4, 5, 6, 7]
+==========	 task: 3	 categories: [8, 9] 	==========
+epoch: 10	 task: 3 	 category: 8 	 loss: 34.484077 	 posloss: 760.411011 	 negloss: 40.561024 	 kldloss: 105.744560 	 maxloss: 1265.458496 	 pseudoloss: 43.152061
+epoch: 20	 task: 3 	 category: 8 	 loss: 18.335322 	 posloss: 466.205505 	 negloss: 44.004116 	 kldloss: 110.886520 	 maxloss: 527.456299 	 pseudoloss: 13.788120
+epoch: 30	 task: 3 	 category: 8 	 loss: 12.172307 	 posloss: 331.698120 	 negloss: 31.003908 	 kldloss: 112.502190 	 maxloss: 290.665009 	 pseudoloss: 7.216243
+epoch: 40	 task: 3 	 category: 8 	 loss: 9.008349 	 posloss: 249.630524 	 negloss: 23.615267 	 kldloss: 108.954697 	 maxloss: 179.621628 	 pseudoloss: 5.785759
+epoch: 50	 task: 3 	 category: 8 	 loss: 6.543151 	 posloss: 186.555054 	 negloss: 19.387564 	 kldloss: 101.590729 	 maxloss: 104.346375 	 pseudoloss: 4.282114
+epoch: 60	 task: 3 	 category: 8 	 loss: 5.825637 	 posloss: 162.027710 	 negloss: 23.122986 	 kldloss: 96.839218 	 maxloss: 85.123711 	 pseudoloss: 3.733068
+epoch: 70	 task: 3 	 category: 8 	 loss: 4.809784 	 posloss: 132.552689 	 negloss: 19.047859 	 kldloss: 91.541153 	 maxloss: 58.532192 	 pseudoloss: 5.026981
+epoch: 80	 task: 3 	 category: 8 	 loss: 3.769306 	 posloss: 105.995949 	 negloss: 11.839970 	 kldloss: 87.798698 	 maxloss: 34.751694 	 pseudoloss: 0.032716
+epoch: 90	 task: 3 	 category: 8 	 loss: 3.512125 	 posloss: 92.728767 	 negloss: 12.570813 	 kldloss: 85.195618 	 maxloss: 29.775242 	 pseudoloss: 2.181483
+epoch: 100	 task: 3 	 category: 8 	 loss: 3.147268 	 posloss: 78.078827 	 negloss: 15.320003 	 kldloss: 82.179413 	 maxloss: 21.684555 	 pseudoloss: 3.387782
+epoch: 10	 task: 3 	 category: 9 	 loss: 63.959573 	 posloss: 1126.018555 	 negloss: 59.375072 	 kldloss: 140.026108 	 maxloss: 2691.198975 	 pseudoloss: 55.519684
+epoch: 20	 task: 3 	 category: 9 	 loss: 32.268564 	 posloss: 677.344421 	 negloss: 62.857590 	 kldloss: 164.600357 	 maxloss: 1113.701904 	 pseudoloss: 29.827843
+epoch: 30	 task: 3 	 category: 9 	 loss: 20.640425 	 posloss: 484.118408 	 negloss: 51.351040 	 kldloss: 161.431107 	 maxloss: 593.084351 	 pseudoloss: 22.052839
+epoch: 40	 task: 3 	 category: 9 	 loss: 14.901680 	 posloss: 369.979034 	 negloss: 55.931824 	 kldloss: 148.103668 	 maxloss: 344.216431 	 pseudoloss: 36.699142
+epoch: 50	 task: 3 	 category: 9 	 loss: 10.028106 	 posloss: 273.753418 	 negloss: 24.877083 	 kldloss: 147.639801 	 maxloss: 178.602219 	 pseudoloss: 7.728644
+epoch: 60	 task: 3 	 category: 9 	 loss: 8.586073 	 posloss: 237.730652 	 negloss: 25.658558 	 kldloss: 139.180359 	 maxloss: 138.933838 	 pseudoloss: 6.438045
+epoch: 70	 task: 3 	 category: 9 	 loss: 6.783079 	 posloss: 186.991394 	 negloss: 21.558764 	 kldloss: 134.463058 	 maxloss: 79.686546 	 pseudoloss: 7.194542
+epoch: 80	 task: 3 	 category: 9 	 loss: 6.053270 	 posloss: 167.419418 	 negloss: 16.309490 	 kldloss: 127.287148 	 maxloss: 63.873798 	 pseudoloss: 10.889962
+epoch: 90	 task: 3 	 category: 9 	 loss: 4.895525 	 posloss: 133.637405 	 negloss: 17.916039 	 kldloss: 121.571014 	 maxloss: 35.646015 	 pseudoloss: 4.483318
+epoch: 100	 task: 3 	 category: 9 	 loss: 4.417433 	 posloss: 116.745415 	 negloss: 9.954538 	 kldloss: 118.548492 	 maxloss: 28.852604 	 pseudoloss: 5.630766
+stage: 3
+cluster,task 0 : 0.7615
+cluster,task  1  : 0.415
+cluster,task  2  : 0.718
+cluster,task  3  : 0.706
+cluster,all novel : 0.613

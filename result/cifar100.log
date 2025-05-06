@@ -1,0 +1,1118 @@
+nohup: 忽略输入
+
+=================================================================
+========================== seq-cifar100 nt: 1 ==========================
+=================================================================
+
+Namespace(root='../data/', transform='default', featureNet='resnet18', nt=4, t_c_arr={0: (([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69], (0, 0.87), '0-70'),), 1: (([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69], (0.87, 0.95), '0-70'), ([70, 71, 72, 73, 74, 75, 76, 77, 78, 79], (0, 0.7), '70-80')), 2: (([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69], (0.95, 0.97), '0-70'), ([70, 71, 72, 73, 74, 75, 76, 77, 78, 79], (0.7, 0.9), '70-80'), ([80, 81, 82, 83, 84, 85, 86, 87, 88, 89], (0, 0.9), '89-90')), 3: (([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69], (0.97, 1.0), '0-70'), ([70, 71, 72, 73, 74, 75, 76, 77, 78, 79], (0.9, 1.0), '70-80'), ([80, 81, 82, 83, 84, 85, 86, 87, 88, 89], (0.9, 1.0), '80-90'), ([90, 91, 92, 93, 94, 95, 96, 97, 98, 99], (0, 1.0), '90-100'))}, validation=False, class_shuffle=False, task_shuffle=False, backbone='None', n_epochs=100, learning_rate=None, batch_size=64, print_freq=10, img_dir='img/', seed=None, repeat=1, LOG_DIR='./logs', dataset='seq-cifar100', sz_embedding=512, gpu_id=0, nb_workers=0, basemodel='resnet18', loss='Proxy_Anchor', optimizer='adamw', lr=5e-05, weight_decay=0.01, lr_decay_step=5, lr_decay_gamma=0.5, alpha=32, mrg=0.1, warm=5, bn_freeze=True, l2_norm=True, remark='', use_split_modlue=True, use_GM_clustering=True, exp='0', model='gcdvae', device=device(type='cuda'), pretrain_lr=0.0001, VaDE_lr=1e-09, pretrain_epochs=300, VaDE_epochs=30, root1='data/', ratio=1, num=0, ratio_bate=0.3, lambda1=10, lambda2=20, prato=0, kld_ratio=0.5, eps=1, embedding_dim=250, r_inter=1500, r_intra=800, isPseudo=True, patience=50, pretrain=True, pretrained_path='weights/pretrained_parameter_softmax_vae.pth', model1='model/gcd', nf=64, isPrint=False)
+================================= repeat 1/1 =================================
+Files already downloaded and verified
+Files already downloaded and verified
+/home/zhangsiyu/anaconda3/envs/pytorch/lib/python3.9/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/zhangsiyu/anaconda3/envs/pytorch/lib/python3.9/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+epoch: 10	 task: 0 	 category: 0 	 loss: nan 	 posloss: 468.519897 	 negloss: 15.288176 	 kldloss: 61.014175 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 0 	 loss: nan 	 posloss: 290.188538 	 negloss: 18.686033 	 kldloss: 62.881367 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 0 	 loss: nan 	 posloss: 169.794662 	 negloss: 11.474821 	 kldloss: 62.328564 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 0 	 loss: nan 	 posloss: 110.839294 	 negloss: 6.091808 	 kldloss: 61.145851 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 0 	 loss: nan 	 posloss: 66.426781 	 negloss: 4.111878 	 kldloss: 56.113060 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 0 	 loss: nan 	 posloss: 49.058521 	 negloss: 2.463691 	 kldloss: 53.795921 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 0 	 loss: nan 	 posloss: 30.712194 	 negloss: 2.199612 	 kldloss: 51.523834 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 0 	 loss: nan 	 posloss: 25.865692 	 negloss: 1.575650 	 kldloss: 47.021332 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 0 	 loss: nan 	 posloss: 25.705894 	 negloss: 1.274469 	 kldloss: 45.893055 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 0 	 loss: nan 	 posloss: 30.339895 	 negloss: 1.200336 	 kldloss: 47.574291 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 1 	 loss: nan 	 posloss: 665.189270 	 negloss: 25.283665 	 kldloss: 58.809868 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 1 	 loss: nan 	 posloss: 400.247192 	 negloss: 16.932192 	 kldloss: 64.556953 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 1 	 loss: nan 	 posloss: 232.211761 	 negloss: 9.512137 	 kldloss: 67.693855 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 1 	 loss: nan 	 posloss: 134.897598 	 negloss: 6.184062 	 kldloss: 69.383614 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 1 	 loss: nan 	 posloss: 76.665680 	 negloss: 3.510883 	 kldloss: 66.364250 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 1 	 loss: nan 	 posloss: 43.578259 	 negloss: 1.873699 	 kldloss: 64.046257 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 1 	 loss: nan 	 posloss: 33.357075 	 negloss: 1.320717 	 kldloss: 57.772709 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 1 	 loss: nan 	 posloss: 26.594688 	 negloss: 2.978051 	 kldloss: 57.882984 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 1 	 loss: nan 	 posloss: 23.331192 	 negloss: 1.887793 	 kldloss: 54.963264 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 1 	 loss: nan 	 posloss: 31.429163 	 negloss: 2.758790 	 kldloss: 52.370274 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 2 	 loss: nan 	 posloss: 745.482483 	 negloss: 49.090084 	 kldloss: 47.237080 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 2 	 loss: nan 	 posloss: 500.932556 	 negloss: 38.962677 	 kldloss: 53.266281 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 2 	 loss: nan 	 posloss: 345.940216 	 negloss: 20.781689 	 kldloss: 55.073578 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 2 	 loss: nan 	 posloss: 243.965729 	 negloss: 14.259056 	 kldloss: 62.508221 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 2 	 loss: nan 	 posloss: 156.966125 	 negloss: 8.984715 	 kldloss: 61.105171 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 2 	 loss: nan 	 posloss: 93.734840 	 negloss: 6.004395 	 kldloss: 62.107162 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 2 	 loss: nan 	 posloss: 59.678593 	 negloss: 4.407143 	 kldloss: 59.983700 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 2 	 loss: nan 	 posloss: 40.272953 	 negloss: 3.774516 	 kldloss: 56.943542 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 2 	 loss: nan 	 posloss: 30.704165 	 negloss: 3.884057 	 kldloss: 55.949005 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 2 	 loss: nan 	 posloss: 23.594858 	 negloss: 2.544560 	 kldloss: 52.743172 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 3 	 loss: nan 	 posloss: 1013.244690 	 negloss: 39.818634 	 kldloss: 63.534016 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 3 	 loss: nan 	 posloss: 720.908325 	 negloss: 34.007626 	 kldloss: 63.246685 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 3 	 loss: nan 	 posloss: 535.982971 	 negloss: 24.925392 	 kldloss: 66.116592 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 3 	 loss: nan 	 posloss: 399.210144 	 negloss: 17.933434 	 kldloss: 73.724030 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 3 	 loss: nan 	 posloss: 246.124298 	 negloss: 10.727171 	 kldloss: 79.381935 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 3 	 loss: nan 	 posloss: 148.256866 	 negloss: 8.695858 	 kldloss: 81.777092 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 3 	 loss: nan 	 posloss: 95.407608 	 negloss: 6.168712 	 kldloss: 80.291092 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 3 	 loss: nan 	 posloss: 56.159969 	 negloss: 5.604687 	 kldloss: 77.425682 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 3 	 loss: nan 	 posloss: 40.485283 	 negloss: 3.033971 	 kldloss: 73.282829 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 3 	 loss: nan 	 posloss: 43.327129 	 negloss: 3.508824 	 kldloss: 68.552490 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 4 	 loss: nan 	 posloss: 970.703369 	 negloss: 45.268318 	 kldloss: 55.992401 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 4 	 loss: nan 	 posloss: 702.581421 	 negloss: 44.519447 	 kldloss: 58.004044 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 4 	 loss: nan 	 posloss: 486.528198 	 negloss: 37.491379 	 kldloss: 62.722206 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 4 	 loss: nan 	 posloss: 348.188263 	 negloss: 24.763563 	 kldloss: 67.450035 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 4 	 loss: nan 	 posloss: 249.626144 	 negloss: 18.894087 	 kldloss: 72.435005 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 4 	 loss: nan 	 posloss: 163.305710 	 negloss: 8.848655 	 kldloss: 73.120697 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 4 	 loss: nan 	 posloss: 102.601021 	 negloss: 7.851285 	 kldloss: 71.772659 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 4 	 loss: nan 	 posloss: 73.332619 	 negloss: 6.183163 	 kldloss: 71.070343 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 4 	 loss: nan 	 posloss: 61.903503 	 negloss: 7.357588 	 kldloss: 66.582710 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 4 	 loss: nan 	 posloss: 44.409088 	 negloss: 3.627969 	 kldloss: 62.533379 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 5 	 loss: nan 	 posloss: 598.978333 	 negloss: 45.976265 	 kldloss: 46.961082 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 5 	 loss: nan 	 posloss: 425.913635 	 negloss: 41.140079 	 kldloss: 48.888172 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 5 	 loss: nan 	 posloss: 266.784149 	 negloss: 22.425089 	 kldloss: 55.382275 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 5 	 loss: nan 	 posloss: 185.620941 	 negloss: 14.085711 	 kldloss: 57.365517 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 5 	 loss: nan 	 posloss: 121.947701 	 negloss: 8.282221 	 kldloss: 58.847324 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 5 	 loss: nan 	 posloss: 66.621078 	 negloss: 5.735979 	 kldloss: 56.726940 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 5 	 loss: nan 	 posloss: 42.302879 	 negloss: 2.476213 	 kldloss: 52.406403 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 5 	 loss: nan 	 posloss: 32.455399 	 negloss: 3.484634 	 kldloss: 50.685211 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 5 	 loss: nan 	 posloss: 27.812454 	 negloss: 3.139056 	 kldloss: 48.919559 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 5 	 loss: nan 	 posloss: 26.372341 	 negloss: 2.742306 	 kldloss: 45.886852 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 6 	 loss: nan 	 posloss: 875.491821 	 negloss: 22.874893 	 kldloss: 67.266251 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 6 	 loss: nan 	 posloss: 564.913513 	 negloss: 19.064009 	 kldloss: 73.705490 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 6 	 loss: nan 	 posloss: 361.427795 	 negloss: 13.699531 	 kldloss: 78.880997 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 6 	 loss: nan 	 posloss: 230.601364 	 negloss: 9.630546 	 kldloss: 83.609123 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 6 	 loss: nan 	 posloss: 127.860741 	 negloss: 5.758177 	 kldloss: 83.808029 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 6 	 loss: nan 	 posloss: 68.644257 	 negloss: 3.413028 	 kldloss: 80.339828 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 6 	 loss: nan 	 posloss: 49.965088 	 negloss: 4.610932 	 kldloss: 75.789764 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 6 	 loss: nan 	 posloss: 31.446201 	 negloss: 2.131456 	 kldloss: 71.850189 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 6 	 loss: nan 	 posloss: 29.643564 	 negloss: 2.852247 	 kldloss: 67.328415 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 6 	 loss: nan 	 posloss: 27.495514 	 negloss: 2.674064 	 kldloss: 66.227119 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 7 	 loss: nan 	 posloss: 851.975403 	 negloss: 26.878202 	 kldloss: 73.049416 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 7 	 loss: nan 	 posloss: 595.521606 	 negloss: 18.986240 	 kldloss: 73.163017 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 7 	 loss: nan 	 posloss: 408.078583 	 negloss: 11.431508 	 kldloss: 80.403969 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 7 	 loss: nan 	 posloss: 278.043488 	 negloss: 6.448303 	 kldloss: 84.185013 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 7 	 loss: nan 	 posloss: 167.343719 	 negloss: 5.153291 	 kldloss: 85.860794 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 7 	 loss: nan 	 posloss: 95.201256 	 negloss: 3.945889 	 kldloss: 83.576645 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 7 	 loss: nan 	 posloss: 49.126873 	 negloss: 1.720630 	 kldloss: 81.207901 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 7 	 loss: nan 	 posloss: 38.202259 	 negloss: 2.846772 	 kldloss: 75.931450 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 7 	 loss: nan 	 posloss: 35.677830 	 negloss: 1.658790 	 kldloss: 70.428772 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 7 	 loss: nan 	 posloss: 30.628674 	 negloss: 2.376424 	 kldloss: 68.115707 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 8 	 loss: nan 	 posloss: 684.887207 	 negloss: 16.112886 	 kldloss: 65.629326 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 8 	 loss: nan 	 posloss: 402.898071 	 negloss: 13.140378 	 kldloss: 70.118668 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 8 	 loss: nan 	 posloss: 247.913223 	 negloss: 8.157636 	 kldloss: 73.090286 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 8 	 loss: nan 	 posloss: 153.009171 	 negloss: 4.669281 	 kldloss: 75.203842 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 8 	 loss: nan 	 posloss: 87.536797 	 negloss: 1.906386 	 kldloss: 72.353088 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 8 	 loss: nan 	 posloss: 59.855602 	 negloss: 2.730462 	 kldloss: 70.210579 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 8 	 loss: nan 	 posloss: 33.667660 	 negloss: 1.484937 	 kldloss: 65.507339 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 8 	 loss: nan 	 posloss: 31.764835 	 negloss: 1.041481 	 kldloss: 61.751087 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 8 	 loss: nan 	 posloss: 28.103682 	 negloss: 1.481100 	 kldloss: 58.991093 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 8 	 loss: nan 	 posloss: 22.543974 	 negloss: 0.846683 	 kldloss: 57.653305 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 9 	 loss: nan 	 posloss: 575.261658 	 negloss: 21.673738 	 kldloss: 71.634949 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 9 	 loss: nan 	 posloss: 362.104919 	 negloss: 14.835490 	 kldloss: 68.595490 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 9 	 loss: nan 	 posloss: 213.658401 	 negloss: 9.290764 	 kldloss: 70.095558 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 9 	 loss: nan 	 posloss: 135.981766 	 negloss: 4.417565 	 kldloss: 68.565376 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 9 	 loss: nan 	 posloss: 75.382629 	 negloss: 1.942735 	 kldloss: 67.263664 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 9 	 loss: nan 	 posloss: 41.921452 	 negloss: 1.350917 	 kldloss: 64.198517 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 9 	 loss: nan 	 posloss: 34.387203 	 negloss: 1.526798 	 kldloss: 59.787697 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 9 	 loss: nan 	 posloss: 28.144289 	 negloss: 1.522427 	 kldloss: 57.784740 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 9 	 loss: nan 	 posloss: 24.089306 	 negloss: 1.142991 	 kldloss: 56.957275 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 9 	 loss: nan 	 posloss: 23.607723 	 negloss: 0.620453 	 kldloss: 51.965069 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 10 	 loss: nan 	 posloss: 914.433533 	 negloss: 32.614666 	 kldloss: 72.138603 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 10 	 loss: nan 	 posloss: 617.921814 	 negloss: 27.998491 	 kldloss: 73.685661 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 10 	 loss: nan 	 posloss: 418.424988 	 negloss: 20.050997 	 kldloss: 81.389709 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 10 	 loss: nan 	 posloss: 259.508942 	 negloss: 10.922959 	 kldloss: 87.181717 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 10 	 loss: nan 	 posloss: 141.598495 	 negloss: 4.842393 	 kldloss: 90.551025 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 10 	 loss: nan 	 posloss: 82.194946 	 negloss: 4.773827 	 kldloss: 90.747505 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 10 	 loss: nan 	 posloss: 49.444736 	 negloss: 3.897430 	 kldloss: 82.892563 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 10 	 loss: nan 	 posloss: 41.604786 	 negloss: 2.365336 	 kldloss: 74.401489 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 10 	 loss: nan 	 posloss: 31.237143 	 negloss: 2.734067 	 kldloss: 72.346291 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 10 	 loss: nan 	 posloss: 37.263008 	 negloss: 2.494673 	 kldloss: 70.545486 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 11 	 loss: nan 	 posloss: 910.713074 	 negloss: 62.032375 	 kldloss: 37.989574 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 11 	 loss: nan 	 posloss: 624.577881 	 negloss: 54.928787 	 kldloss: 45.321266 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 11 	 loss: nan 	 posloss: 450.671417 	 negloss: 32.214821 	 kldloss: 51.077217 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 11 	 loss: nan 	 posloss: 297.046204 	 negloss: 16.754786 	 kldloss: 58.224506 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 11 	 loss: nan 	 posloss: 187.166382 	 negloss: 9.378426 	 kldloss: 63.997257 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 11 	 loss: nan 	 posloss: 118.010773 	 negloss: 5.872404 	 kldloss: 64.671120 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 11 	 loss: nan 	 posloss: 77.624428 	 negloss: 3.628683 	 kldloss: 59.452156 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 11 	 loss: nan 	 posloss: 53.084873 	 negloss: 4.836165 	 kldloss: 59.129749 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 11 	 loss: nan 	 posloss: 36.733833 	 negloss: 4.192164 	 kldloss: 55.474869 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 11 	 loss: nan 	 posloss: 34.166603 	 negloss: 3.527389 	 kldloss: 51.431034 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 12 	 loss: nan 	 posloss: 727.254578 	 negloss: 35.509758 	 kldloss: 47.827244 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 12 	 loss: nan 	 posloss: 435.389191 	 negloss: 18.003336 	 kldloss: 52.397038 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 12 	 loss: nan 	 posloss: 262.482300 	 negloss: 14.131159 	 kldloss: 56.472332 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 12 	 loss: nan 	 posloss: 176.392319 	 negloss: 9.377945 	 kldloss: 58.008827 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 12 	 loss: nan 	 posloss: 111.648216 	 negloss: 4.939274 	 kldloss: 59.842869 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 12 	 loss: nan 	 posloss: 83.447235 	 negloss: 9.748116 	 kldloss: 59.185757 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 12 	 loss: nan 	 posloss: 39.232853 	 negloss: 4.289427 	 kldloss: 54.779190 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 12 	 loss: nan 	 posloss: 38.315670 	 negloss: 3.669463 	 kldloss: 51.657421 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 12 	 loss: nan 	 posloss: 32.735855 	 negloss: 3.900268 	 kldloss: 49.789272 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 12 	 loss: nan 	 posloss: 30.310547 	 negloss: 2.557309 	 kldloss: 46.664021 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 13 	 loss: nan 	 posloss: 652.418335 	 negloss: 37.307316 	 kldloss: 48.781727 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 13 	 loss: nan 	 posloss: 386.507263 	 negloss: 27.253977 	 kldloss: 57.061848 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 13 	 loss: nan 	 posloss: 227.140259 	 negloss: 14.802519 	 kldloss: 59.308262 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 13 	 loss: nan 	 posloss: 134.072586 	 negloss: 9.530047 	 kldloss: 60.140396 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 13 	 loss: nan 	 posloss: 91.151184 	 negloss: 5.693415 	 kldloss: 58.534416 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 13 	 loss: nan 	 posloss: 60.571808 	 negloss: 4.265882 	 kldloss: 55.686745 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 13 	 loss: nan 	 posloss: 39.992420 	 negloss: 2.172880 	 kldloss: 52.986134 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 13 	 loss: nan 	 posloss: 33.368103 	 negloss: 4.676960 	 kldloss: 50.951492 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 13 	 loss: nan 	 posloss: 27.214291 	 negloss: 2.267568 	 kldloss: 49.974220 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 13 	 loss: nan 	 posloss: 24.826973 	 negloss: 1.016331 	 kldloss: 46.089558 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 14 	 loss: nan 	 posloss: 944.100647 	 negloss: 32.254742 	 kldloss: 66.410667 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 14 	 loss: nan 	 posloss: 617.277222 	 negloss: 18.958910 	 kldloss: 71.724731 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 14 	 loss: nan 	 posloss: 409.566895 	 negloss: 11.856976 	 kldloss: 78.358749 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 14 	 loss: nan 	 posloss: 260.233551 	 negloss: 6.788054 	 kldloss: 82.246552 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 14 	 loss: nan 	 posloss: 160.410065 	 negloss: 5.415430 	 kldloss: 82.183228 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 14 	 loss: nan 	 posloss: 97.101471 	 negloss: 5.623101 	 kldloss: 81.629875 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 14 	 loss: nan 	 posloss: 52.620121 	 negloss: 5.232495 	 kldloss: 77.661873 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 14 	 loss: nan 	 posloss: 34.797184 	 negloss: 2.442055 	 kldloss: 72.115364 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 14 	 loss: nan 	 posloss: 27.847921 	 negloss: 1.022018 	 kldloss: 66.890388 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 14 	 loss: nan 	 posloss: 33.584255 	 negloss: 5.274512 	 kldloss: 67.239799 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 15 	 loss: nan 	 posloss: 1011.960510 	 negloss: 26.609009 	 kldloss: 67.773735 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 15 	 loss: nan 	 posloss: 658.218445 	 negloss: 21.814545 	 kldloss: 70.731804 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 15 	 loss: nan 	 posloss: 435.271973 	 negloss: 18.764275 	 kldloss: 79.921410 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 15 	 loss: nan 	 posloss: 259.698669 	 negloss: 10.175569 	 kldloss: 86.931648 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 15 	 loss: nan 	 posloss: 147.214462 	 negloss: 5.921275 	 kldloss: 87.513130 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 15 	 loss: nan 	 posloss: 89.068466 	 negloss: 5.902309 	 kldloss: 84.642014 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 15 	 loss: nan 	 posloss: 50.105900 	 negloss: 2.265053 	 kldloss: 80.543938 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 15 	 loss: nan 	 posloss: 40.249058 	 negloss: 4.336775 	 kldloss: 75.364937 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 15 	 loss: nan 	 posloss: 29.213915 	 negloss: 2.829217 	 kldloss: 71.649155 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 15 	 loss: nan 	 posloss: 28.756489 	 negloss: 2.877813 	 kldloss: 67.153786 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 16 	 loss: nan 	 posloss: 746.853027 	 negloss: 22.811049 	 kldloss: 76.074768 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 16 	 loss: nan 	 posloss: 496.109161 	 negloss: 17.630585 	 kldloss: 74.901443 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 16 	 loss: nan 	 posloss: 325.223419 	 negloss: 11.132561 	 kldloss: 77.657616 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 16 	 loss: nan 	 posloss: 206.665771 	 negloss: 6.880296 	 kldloss: 79.413651 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 16 	 loss: nan 	 posloss: 127.272949 	 negloss: 4.467972 	 kldloss: 83.098297 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 16 	 loss: nan 	 posloss: 72.154716 	 negloss: 2.754514 	 kldloss: 81.168900 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 16 	 loss: nan 	 posloss: 45.347969 	 negloss: 1.302357 	 kldloss: 74.876122 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 16 	 loss: nan 	 posloss: 35.592655 	 negloss: 1.171991 	 kldloss: 71.258720 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 16 	 loss: nan 	 posloss: 33.039761 	 negloss: 1.831944 	 kldloss: 67.672539 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 16 	 loss: nan 	 posloss: 29.164175 	 negloss: 2.360411 	 kldloss: 63.057690 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 17 	 loss: nan 	 posloss: 539.581543 	 negloss: 29.630486 	 kldloss: 37.412910 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 17 	 loss: nan 	 posloss: 318.971741 	 negloss: 23.323786 	 kldloss: 41.851757 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 17 	 loss: nan 	 posloss: 214.133987 	 negloss: 14.300141 	 kldloss: 42.829044 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 17 	 loss: nan 	 posloss: 137.880081 	 negloss: 8.788040 	 kldloss: 42.776119 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 17 	 loss: nan 	 posloss: 92.866539 	 negloss: 4.610289 	 kldloss: 45.616333 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 17 	 loss: nan 	 posloss: 69.654938 	 negloss: 4.046429 	 kldloss: 45.356590 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 17 	 loss: nan 	 posloss: 40.822269 	 negloss: 3.558212 	 kldloss: 42.449444 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 17 	 loss: nan 	 posloss: 29.652800 	 negloss: 2.092189 	 kldloss: 41.000019 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 17 	 loss: nan 	 posloss: 26.864740 	 negloss: 3.052369 	 kldloss: 39.062473 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 17 	 loss: nan 	 posloss: 21.743683 	 negloss: 2.489579 	 kldloss: 37.813038 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 18 	 loss: nan 	 posloss: 775.412415 	 negloss: 31.020847 	 kldloss: 45.882652 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 18 	 loss: nan 	 posloss: 483.211060 	 negloss: 27.242529 	 kldloss: 54.376690 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 18 	 loss: nan 	 posloss: 323.357910 	 negloss: 13.281408 	 kldloss: 59.763474 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 18 	 loss: nan 	 posloss: 199.595490 	 negloss: 7.513578 	 kldloss: 66.068138 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 18 	 loss: nan 	 posloss: 124.546577 	 negloss: 6.176171 	 kldloss: 64.877068 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 18 	 loss: nan 	 posloss: 80.743195 	 negloss: 4.212824 	 kldloss: 63.069553 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 18 	 loss: nan 	 posloss: 48.517761 	 negloss: 2.947925 	 kldloss: 60.133720 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 18 	 loss: nan 	 posloss: 32.566429 	 negloss: 6.112533 	 kldloss: 57.668339 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 18 	 loss: nan 	 posloss: 34.241699 	 negloss: 3.276857 	 kldloss: 53.187321 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 18 	 loss: nan 	 posloss: 23.900745 	 negloss: 2.385963 	 kldloss: 52.411388 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 19 	 loss: nan 	 posloss: 948.983765 	 negloss: 32.877380 	 kldloss: 66.578407 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 19 	 loss: nan 	 posloss: 667.348206 	 negloss: 29.797876 	 kldloss: 70.459312 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 19 	 loss: nan 	 posloss: 436.174103 	 negloss: 20.696384 	 kldloss: 76.609161 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 19 	 loss: nan 	 posloss: 278.950104 	 negloss: 12.848661 	 kldloss: 77.744415 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 19 	 loss: nan 	 posloss: 189.244690 	 negloss: 8.921306 	 kldloss: 80.335121 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 19 	 loss: nan 	 posloss: 111.030678 	 negloss: 6.239166 	 kldloss: 81.607399 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 19 	 loss: nan 	 posloss: 66.211266 	 negloss: 3.265142 	 kldloss: 80.058838 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 19 	 loss: nan 	 posloss: 43.044849 	 negloss: 2.776943 	 kldloss: 75.265160 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 19 	 loss: nan 	 posloss: 35.667618 	 negloss: 3.295937 	 kldloss: 71.172791 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 19 	 loss: nan 	 posloss: 37.145767 	 negloss: 3.634251 	 kldloss: 71.355713 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 20 	 loss: nan 	 posloss: 619.976929 	 negloss: 17.137421 	 kldloss: 67.882187 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 20 	 loss: nan 	 posloss: 324.303192 	 negloss: 14.618829 	 kldloss: 70.890556 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 20 	 loss: nan 	 posloss: 202.039948 	 negloss: 9.221509 	 kldloss: 72.637459 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 20 	 loss: nan 	 posloss: 128.548569 	 negloss: 7.402111 	 kldloss: 69.237984 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 20 	 loss: nan 	 posloss: 81.769646 	 negloss: 3.768942 	 kldloss: 68.831619 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 20 	 loss: nan 	 posloss: 42.223694 	 negloss: 3.075275 	 kldloss: 65.331306 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 20 	 loss: nan 	 posloss: 34.738258 	 negloss: 2.408399 	 kldloss: 60.530182 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 20 	 loss: nan 	 posloss: 27.375242 	 negloss: 2.279795 	 kldloss: 58.490437 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 20 	 loss: nan 	 posloss: 27.654627 	 negloss: 2.396944 	 kldloss: 57.530262 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 20 	 loss: nan 	 posloss: 24.521215 	 negloss: 1.605744 	 kldloss: 54.807381 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 21 	 loss: nan 	 posloss: 738.334961 	 negloss: 27.596098 	 kldloss: 61.592060 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 21 	 loss: nan 	 posloss: 501.456757 	 negloss: 22.952980 	 kldloss: 65.322655 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 21 	 loss: nan 	 posloss: 348.676147 	 negloss: 21.991133 	 kldloss: 68.394463 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 21 	 loss: nan 	 posloss: 231.387070 	 negloss: 14.396942 	 kldloss: 71.419273 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 21 	 loss: nan 	 posloss: 131.303802 	 negloss: 10.241985 	 kldloss: 70.216789 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 21 	 loss: nan 	 posloss: 77.487305 	 negloss: 6.736661 	 kldloss: 67.659645 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 21 	 loss: nan 	 posloss: 54.294281 	 negloss: 3.695725 	 kldloss: 63.705055 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 21 	 loss: nan 	 posloss: 38.265785 	 negloss: 2.519706 	 kldloss: 62.784481 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 21 	 loss: nan 	 posloss: 31.116810 	 negloss: 3.256635 	 kldloss: 59.488892 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 21 	 loss: nan 	 posloss: 30.507826 	 negloss: 2.418921 	 kldloss: 58.392330 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 22 	 loss: nan 	 posloss: 864.229858 	 negloss: 12.454045 	 kldloss: 83.483101 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 22 	 loss: nan 	 posloss: 564.933716 	 negloss: 13.010325 	 kldloss: 82.483513 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 22 	 loss: nan 	 posloss: 361.331329 	 negloss: 10.049999 	 kldloss: 89.723724 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 22 	 loss: nan 	 posloss: 215.259232 	 negloss: 5.888282 	 kldloss: 93.417091 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 22 	 loss: nan 	 posloss: 118.820557 	 negloss: 3.452070 	 kldloss: 92.589798 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 22 	 loss: nan 	 posloss: 71.622078 	 negloss: 1.855078 	 kldloss: 87.523903 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 22 	 loss: nan 	 posloss: 39.054813 	 negloss: 1.342305 	 kldloss: 82.472015 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 22 	 loss: nan 	 posloss: 34.288338 	 negloss: 1.521759 	 kldloss: 78.236336 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 22 	 loss: nan 	 posloss: 30.283173 	 negloss: 0.843773 	 kldloss: 73.781944 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 22 	 loss: nan 	 posloss: 26.177595 	 negloss: 0.939568 	 kldloss: 71.218536 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 23 	 loss: nan 	 posloss: 257.883606 	 negloss: 47.452454 	 kldloss: 23.752735 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 23 	 loss: nan 	 posloss: 162.872681 	 negloss: 33.687202 	 kldloss: 21.480438 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 23 	 loss: nan 	 posloss: 95.492027 	 negloss: 28.668724 	 kldloss: 21.504337 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 23 	 loss: nan 	 posloss: 78.081932 	 negloss: 19.469687 	 kldloss: 18.219460 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 23 	 loss: nan 	 posloss: 65.426285 	 negloss: 14.942446 	 kldloss: 19.434978 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 23 	 loss: nan 	 posloss: 46.233566 	 negloss: 9.150136 	 kldloss: 19.161346 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 23 	 loss: nan 	 posloss: 36.631222 	 negloss: 11.977248 	 kldloss: 18.973249 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 23 	 loss: nan 	 posloss: 31.185196 	 negloss: 10.334971 	 kldloss: 18.516462 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 23 	 loss: nan 	 posloss: 27.488991 	 negloss: 6.680058 	 kldloss: 17.417358 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 23 	 loss: nan 	 posloss: 24.012869 	 negloss: 5.745259 	 kldloss: 18.207977 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 24 	 loss: nan 	 posloss: 675.722961 	 negloss: 11.213462 	 kldloss: 76.903404 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 24 	 loss: nan 	 posloss: 391.890442 	 negloss: 12.387578 	 kldloss: 77.725197 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 24 	 loss: nan 	 posloss: 248.600555 	 negloss: 6.688873 	 kldloss: 79.586136 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 24 	 loss: nan 	 posloss: 142.852005 	 negloss: 3.543112 	 kldloss: 81.299248 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 24 	 loss: nan 	 posloss: 78.408081 	 negloss: 2.973179 	 kldloss: 78.566154 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 24 	 loss: nan 	 posloss: 52.588795 	 negloss: 1.728320 	 kldloss: 74.985023 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 24 	 loss: nan 	 posloss: 37.067810 	 negloss: 2.646329 	 kldloss: 65.772926 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 24 	 loss: nan 	 posloss: 29.115303 	 negloss: 1.493139 	 kldloss: 63.650459 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 24 	 loss: nan 	 posloss: 23.918613 	 negloss: 1.043795 	 kldloss: 60.476959 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 24 	 loss: nan 	 posloss: 21.749092 	 negloss: 1.972559 	 kldloss: 61.996769 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 25 	 loss: nan 	 posloss: 795.188232 	 negloss: 49.999699 	 kldloss: 53.876015 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 25 	 loss: nan 	 posloss: 523.552612 	 negloss: 40.824371 	 kldloss: 61.853558 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 25 	 loss: nan 	 posloss: 361.899994 	 negloss: 22.089973 	 kldloss: 65.604416 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 25 	 loss: nan 	 posloss: 247.363617 	 negloss: 12.484361 	 kldloss: 69.513031 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 25 	 loss: nan 	 posloss: 153.476227 	 negloss: 7.552411 	 kldloss: 71.592766 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 25 	 loss: nan 	 posloss: 89.190552 	 negloss: 4.914435 	 kldloss: 69.575150 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 25 	 loss: nan 	 posloss: 57.516163 	 negloss: 3.414844 	 kldloss: 65.634972 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 25 	 loss: nan 	 posloss: 44.022305 	 negloss: 3.667848 	 kldloss: 64.374802 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 25 	 loss: nan 	 posloss: 34.701797 	 negloss: 2.950146 	 kldloss: 60.049877 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 25 	 loss: nan 	 posloss: 36.819786 	 negloss: 2.076166 	 kldloss: 59.292191 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 26 	 loss: nan 	 posloss: 1055.010498 	 negloss: 35.843281 	 kldloss: 65.528313 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 26 	 loss: nan 	 posloss: 717.865967 	 negloss: 33.077015 	 kldloss: 70.120033 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 26 	 loss: nan 	 posloss: 494.049286 	 negloss: 19.446898 	 kldloss: 77.793243 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 26 	 loss: nan 	 posloss: 325.656738 	 negloss: 11.209407 	 kldloss: 83.440331 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 26 	 loss: nan 	 posloss: 187.306396 	 negloss: 9.044628 	 kldloss: 87.293945 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 26 	 loss: nan 	 posloss: 100.420029 	 negloss: 5.593097 	 kldloss: 88.316132 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 26 	 loss: nan 	 posloss: 60.824219 	 negloss: 2.629684 	 kldloss: 84.223656 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 26 	 loss: nan 	 posloss: 39.496838 	 negloss: 4.154914 	 kldloss: 77.478180 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 26 	 loss: nan 	 posloss: 28.967772 	 negloss: 1.898971 	 kldloss: 72.966217 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 26 	 loss: nan 	 posloss: 34.617840 	 negloss: 3.709439 	 kldloss: 70.113136 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 27 	 loss: nan 	 posloss: 817.913086 	 negloss: 49.379749 	 kldloss: 37.520779 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 27 	 loss: nan 	 posloss: 607.766907 	 negloss: 43.447449 	 kldloss: 41.787510 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 27 	 loss: nan 	 posloss: 408.569580 	 negloss: 30.203074 	 kldloss: 50.010250 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 27 	 loss: nan 	 posloss: 256.683258 	 negloss: 23.006502 	 kldloss: 54.666344 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 27 	 loss: nan 	 posloss: 180.343155 	 negloss: 13.438969 	 kldloss: 56.960068 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 27 	 loss: nan 	 posloss: 121.378014 	 negloss: 7.816700 	 kldloss: 58.449444 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 27 	 loss: nan 	 posloss: 73.207932 	 negloss: 6.544292 	 kldloss: 57.952297 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 27 	 loss: nan 	 posloss: 51.683044 	 negloss: 3.839193 	 kldloss: 57.225861 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 27 	 loss: nan 	 posloss: 48.698086 	 negloss: 3.603337 	 kldloss: 53.502983 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 27 	 loss: nan 	 posloss: 38.607479 	 negloss: 5.816370 	 kldloss: 50.935936 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 28 	 loss: nan 	 posloss: 709.997131 	 negloss: 24.442108 	 kldloss: 76.319969 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 28 	 loss: nan 	 posloss: 444.650604 	 negloss: 18.383924 	 kldloss: 74.527901 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 28 	 loss: nan 	 posloss: 295.534149 	 negloss: 16.257793 	 kldloss: 78.249123 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 28 	 loss: nan 	 posloss: 167.286011 	 negloss: 7.136171 	 kldloss: 77.729355 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 28 	 loss: nan 	 posloss: 98.702385 	 negloss: 4.092593 	 kldloss: 78.801003 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 28 	 loss: nan 	 posloss: 55.434807 	 negloss: 2.843134 	 kldloss: 73.637589 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 28 	 loss: nan 	 posloss: 39.646748 	 negloss: 2.104994 	 kldloss: 70.459801 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 28 	 loss: nan 	 posloss: 36.838215 	 negloss: 2.181708 	 kldloss: 65.984009 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 28 	 loss: nan 	 posloss: 23.823204 	 negloss: 1.386065 	 kldloss: 63.064880 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 28 	 loss: nan 	 posloss: 24.564617 	 negloss: 1.385712 	 kldloss: 63.966255 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 29 	 loss: nan 	 posloss: 928.434204 	 negloss: 23.481874 	 kldloss: 66.167816 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 29 	 loss: nan 	 posloss: 608.293274 	 negloss: 24.662756 	 kldloss: 74.101204 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 29 	 loss: nan 	 posloss: 389.594971 	 negloss: 15.131720 	 kldloss: 78.393639 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 29 	 loss: nan 	 posloss: 244.278381 	 negloss: 8.612553 	 kldloss: 82.813179 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 29 	 loss: nan 	 posloss: 130.207443 	 negloss: 5.299227 	 kldloss: 84.905350 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 29 	 loss: nan 	 posloss: 74.742332 	 negloss: 4.535961 	 kldloss: 82.061852 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 29 	 loss: nan 	 posloss: 46.076847 	 negloss: 2.476063 	 kldloss: 76.664818 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 29 	 loss: nan 	 posloss: 36.328678 	 negloss: 2.392763 	 kldloss: 73.204300 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 29 	 loss: nan 	 posloss: 32.604950 	 negloss: 4.084506 	 kldloss: 68.643227 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 29 	 loss: nan 	 posloss: 25.780478 	 negloss: 1.883908 	 kldloss: 64.442177 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 30 	 loss: nan 	 posloss: 699.237000 	 negloss: 25.814764 	 kldloss: 50.320595 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 30 	 loss: nan 	 posloss: 427.123840 	 negloss: 21.247576 	 kldloss: 56.810658 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 30 	 loss: nan 	 posloss: 256.815216 	 negloss: 15.285073 	 kldloss: 60.926273 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 30 	 loss: nan 	 posloss: 174.698593 	 negloss: 9.414356 	 kldloss: 61.856842 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 30 	 loss: nan 	 posloss: 111.091560 	 negloss: 8.361054 	 kldloss: 62.460667 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 30 	 loss: nan 	 posloss: 74.813232 	 negloss: 6.540254 	 kldloss: 58.740810 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 30 	 loss: nan 	 posloss: 42.930557 	 negloss: 3.865084 	 kldloss: 57.414371 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 30 	 loss: nan 	 posloss: 30.425882 	 negloss: 3.556485 	 kldloss: 53.185955 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 30 	 loss: nan 	 posloss: 28.314718 	 negloss: 2.049058 	 kldloss: 51.567951 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 30 	 loss: nan 	 posloss: 29.295002 	 negloss: 3.559188 	 kldloss: 50.339989 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 31 	 loss: nan 	 posloss: 803.159607 	 negloss: 28.083643 	 kldloss: 56.551552 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 31 	 loss: nan 	 posloss: 495.141632 	 negloss: 27.716198 	 kldloss: 59.006935 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 31 	 loss: nan 	 posloss: 329.586212 	 negloss: 25.736849 	 kldloss: 64.486259 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 31 	 loss: nan 	 posloss: 226.109451 	 negloss: 17.640749 	 kldloss: 67.181175 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 31 	 loss: nan 	 posloss: 130.631180 	 negloss: 9.139903 	 kldloss: 68.718193 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 31 	 loss: nan 	 posloss: 80.926117 	 negloss: 6.514358 	 kldloss: 66.613876 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 31 	 loss: nan 	 posloss: 55.187176 	 negloss: 6.909988 	 kldloss: 61.060886 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 31 	 loss: nan 	 posloss: 44.693542 	 negloss: 3.329617 	 kldloss: 59.048443 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 31 	 loss: nan 	 posloss: 44.293736 	 negloss: 3.788632 	 kldloss: 56.126911 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 31 	 loss: nan 	 posloss: 31.144619 	 negloss: 3.265233 	 kldloss: 57.948143 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 32 	 loss: nan 	 posloss: 974.677734 	 negloss: 37.341537 	 kldloss: 53.346245 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 32 	 loss: nan 	 posloss: 674.656006 	 negloss: 30.165300 	 kldloss: 59.666897 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 32 	 loss: nan 	 posloss: 449.634491 	 negloss: 21.151436 	 kldloss: 67.922974 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 32 	 loss: nan 	 posloss: 290.878418 	 negloss: 11.313463 	 kldloss: 73.375908 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 32 	 loss: nan 	 posloss: 190.870804 	 negloss: 9.289714 	 kldloss: 78.017471 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 32 	 loss: nan 	 posloss: 119.518089 	 negloss: 7.493851 	 kldloss: 76.892189 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 32 	 loss: nan 	 posloss: 68.742325 	 negloss: 3.147195 	 kldloss: 74.659302 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 32 	 loss: nan 	 posloss: 50.015331 	 negloss: 4.590261 	 kldloss: 69.347969 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 32 	 loss: nan 	 posloss: 35.624035 	 negloss: 1.970954 	 kldloss: 65.744034 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 32 	 loss: nan 	 posloss: 33.974686 	 negloss: 3.291699 	 kldloss: 62.913410 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 33 	 loss: nan 	 posloss: 556.570862 	 negloss: 67.109467 	 kldloss: 25.674999 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 33 	 loss: nan 	 posloss: 347.367859 	 negloss: 55.765171 	 kldloss: 26.481361 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 33 	 loss: nan 	 posloss: 226.226166 	 negloss: 33.675980 	 kldloss: 29.143888 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 33 	 loss: nan 	 posloss: 150.323898 	 negloss: 21.751999 	 kldloss: 29.666626 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 33 	 loss: nan 	 posloss: 106.952835 	 negloss: 9.397843 	 kldloss: 31.135250 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 33 	 loss: nan 	 posloss: 78.332458 	 negloss: 10.347005 	 kldloss: 31.186787 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 33 	 loss: nan 	 posloss: 52.777004 	 negloss: 7.242150 	 kldloss: 31.579971 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 33 	 loss: nan 	 posloss: 46.472450 	 negloss: 6.101105 	 kldloss: 32.025730 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 33 	 loss: nan 	 posloss: 31.548172 	 negloss: 8.349468 	 kldloss: 29.899647 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 33 	 loss: nan 	 posloss: 35.098057 	 negloss: 4.252708 	 kldloss: 27.291639 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 34 	 loss: nan 	 posloss: 806.944824 	 negloss: 27.045881 	 kldloss: 63.275764 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 34 	 loss: nan 	 posloss: 523.736511 	 negloss: 28.024509 	 kldloss: 69.150116 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 34 	 loss: nan 	 posloss: 340.544464 	 negloss: 20.119452 	 kldloss: 70.551605 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 34 	 loss: nan 	 posloss: 220.759842 	 negloss: 13.361211 	 kldloss: 75.105011 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 34 	 loss: nan 	 posloss: 126.967529 	 negloss: 6.918501 	 kldloss: 76.593498 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 34 	 loss: nan 	 posloss: 77.392746 	 negloss: 4.272192 	 kldloss: 71.996429 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 34 	 loss: nan 	 posloss: 51.182678 	 negloss: 4.622422 	 kldloss: 69.703766 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 34 	 loss: nan 	 posloss: 44.971462 	 negloss: 3.408808 	 kldloss: 63.757820 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 34 	 loss: nan 	 posloss: 38.437950 	 negloss: 4.012615 	 kldloss: 61.354065 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 34 	 loss: nan 	 posloss: 33.120621 	 negloss: 2.661664 	 kldloss: 60.232956 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 35 	 loss: nan 	 posloss: 800.769775 	 negloss: 58.840961 	 kldloss: 38.342842 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 35 	 loss: nan 	 posloss: 584.734009 	 negloss: 52.351990 	 kldloss: 44.403790 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 35 	 loss: nan 	 posloss: 389.291534 	 negloss: 34.844429 	 kldloss: 51.208126 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 35 	 loss: nan 	 posloss: 258.471558 	 negloss: 22.565754 	 kldloss: 54.688309 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 35 	 loss: nan 	 posloss: 163.310043 	 negloss: 10.828809 	 kldloss: 60.056511 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 35 	 loss: nan 	 posloss: 101.070862 	 negloss: 5.620512 	 kldloss: 62.021763 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 35 	 loss: nan 	 posloss: 68.835335 	 negloss: 5.512453 	 kldloss: 59.736774 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 35 	 loss: nan 	 posloss: 45.021526 	 negloss: 3.463782 	 kldloss: 56.238636 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 35 	 loss: nan 	 posloss: 35.422871 	 negloss: 4.098967 	 kldloss: 51.838711 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 35 	 loss: nan 	 posloss: 32.890865 	 negloss: 6.578300 	 kldloss: 52.341724 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 36 	 loss: nan 	 posloss: 721.996277 	 negloss: 22.520962 	 kldloss: 68.940117 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 36 	 loss: nan 	 posloss: 450.461121 	 negloss: 19.987930 	 kldloss: 72.274765 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 36 	 loss: nan 	 posloss: 260.548706 	 negloss: 11.425343 	 kldloss: 74.618530 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 36 	 loss: nan 	 posloss: 144.035400 	 negloss: 8.591831 	 kldloss: 77.185860 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 36 	 loss: nan 	 posloss: 82.168556 	 negloss: 3.679574 	 kldloss: 75.927208 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 36 	 loss: nan 	 posloss: 47.398685 	 negloss: 3.625838 	 kldloss: 71.671707 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 36 	 loss: nan 	 posloss: 35.015026 	 negloss: 2.106212 	 kldloss: 64.661697 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 36 	 loss: nan 	 posloss: 31.559994 	 negloss: 3.242380 	 kldloss: 61.146721 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 36 	 loss: nan 	 posloss: 24.292725 	 negloss: 1.620852 	 kldloss: 58.311394 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 36 	 loss: nan 	 posloss: 20.861485 	 negloss: 2.005878 	 kldloss: 59.437366 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 37 	 loss: nan 	 posloss: 643.054321 	 negloss: 43.047977 	 kldloss: 39.228336 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 37 	 loss: nan 	 posloss: 394.373199 	 negloss: 29.289814 	 kldloss: 43.537868 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 37 	 loss: nan 	 posloss: 243.863571 	 negloss: 20.092785 	 kldloss: 48.762959 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 37 	 loss: nan 	 posloss: 150.212570 	 negloss: 9.136122 	 kldloss: 49.072369 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 37 	 loss: nan 	 posloss: 107.506432 	 negloss: 7.815595 	 kldloss: 50.210701 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 37 	 loss: nan 	 posloss: 78.160988 	 negloss: 13.928405 	 kldloss: 48.885067 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 37 	 loss: nan 	 posloss: 37.810642 	 negloss: 3.183463 	 kldloss: 48.467388 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 37 	 loss: nan 	 posloss: 31.760120 	 negloss: 4.373900 	 kldloss: 45.267178 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 37 	 loss: nan 	 posloss: 26.427752 	 negloss: 2.812184 	 kldloss: 42.438721 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 37 	 loss: nan 	 posloss: 35.698559 	 negloss: 5.485645 	 kldloss: 40.644234 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 38 	 loss: nan 	 posloss: 959.583435 	 negloss: 35.772011 	 kldloss: 58.535534 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 38 	 loss: nan 	 posloss: 660.815918 	 negloss: 36.005669 	 kldloss: 65.061241 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 38 	 loss: nan 	 posloss: 474.185944 	 negloss: 28.211660 	 kldloss: 67.095741 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 38 	 loss: nan 	 posloss: 314.627563 	 negloss: 15.785293 	 kldloss: 72.106873 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 38 	 loss: nan 	 posloss: 212.662109 	 negloss: 11.336342 	 kldloss: 77.776802 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 38 	 loss: nan 	 posloss: 132.811188 	 negloss: 8.665763 	 kldloss: 78.681572 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 38 	 loss: nan 	 posloss: 80.383705 	 negloss: 7.650468 	 kldloss: 77.186928 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 38 	 loss: nan 	 posloss: 58.082466 	 negloss: 6.989726 	 kldloss: 74.787384 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 38 	 loss: nan 	 posloss: 40.939022 	 negloss: 4.249342 	 kldloss: 66.777458 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 38 	 loss: nan 	 posloss: 41.016743 	 negloss: 5.669962 	 kldloss: 65.326874 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 39 	 loss: nan 	 posloss: 511.997345 	 negloss: 9.185460 	 kldloss: 73.363632 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 39 	 loss: nan 	 posloss: 265.698090 	 negloss: 6.857888 	 kldloss: 73.423363 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 39 	 loss: nan 	 posloss: 157.572220 	 negloss: 3.814452 	 kldloss: 69.509514 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 39 	 loss: nan 	 posloss: 95.734444 	 negloss: 0.968262 	 kldloss: 66.071869 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 39 	 loss: nan 	 posloss: 57.113792 	 negloss: 1.199597 	 kldloss: 63.254429 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 39 	 loss: nan 	 posloss: 45.290916 	 negloss: 1.434090 	 kldloss: 58.870201 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 39 	 loss: nan 	 posloss: 35.288193 	 negloss: 1.042707 	 kldloss: 56.414238 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 39 	 loss: nan 	 posloss: 31.279802 	 negloss: 0.781771 	 kldloss: 56.315395 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 39 	 loss: nan 	 posloss: 23.806524 	 negloss: 0.621780 	 kldloss: 52.903973 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 39 	 loss: nan 	 posloss: 29.325853 	 negloss: 0.527361 	 kldloss: 50.855629 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 40 	 loss: nan 	 posloss: 938.695679 	 negloss: 31.508020 	 kldloss: 69.357201 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 40 	 loss: nan 	 posloss: 575.250122 	 negloss: 25.615843 	 kldloss: 76.290230 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 40 	 loss: nan 	 posloss: 381.126404 	 negloss: 8.942736 	 kldloss: 82.468651 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 40 	 loss: nan 	 posloss: 244.411102 	 negloss: 5.479760 	 kldloss: 88.328415 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 40 	 loss: nan 	 posloss: 151.544037 	 negloss: 4.460261 	 kldloss: 86.617836 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 40 	 loss: nan 	 posloss: 83.016014 	 negloss: 3.052372 	 kldloss: 84.255310 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 40 	 loss: nan 	 posloss: 57.942272 	 negloss: 2.261350 	 kldloss: 79.733543 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 40 	 loss: nan 	 posloss: 38.203880 	 negloss: 1.902642 	 kldloss: 73.614037 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 40 	 loss: nan 	 posloss: 28.440140 	 negloss: 1.373546 	 kldloss: 69.485405 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 40 	 loss: nan 	 posloss: 30.552528 	 negloss: 2.039198 	 kldloss: 70.278160 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 41 	 loss: nan 	 posloss: 651.831909 	 negloss: 13.729419 	 kldloss: 66.523201 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 41 	 loss: nan 	 posloss: 382.982971 	 negloss: 15.423980 	 kldloss: 67.538170 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 41 	 loss: nan 	 posloss: 244.161896 	 negloss: 7.016549 	 kldloss: 70.879547 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 41 	 loss: nan 	 posloss: 149.599411 	 negloss: 3.981012 	 kldloss: 72.035721 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 41 	 loss: nan 	 posloss: 97.947037 	 negloss: 2.724430 	 kldloss: 69.943726 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 41 	 loss: nan 	 posloss: 59.743614 	 negloss: 1.819738 	 kldloss: 65.943047 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 41 	 loss: nan 	 posloss: 39.463757 	 negloss: 1.104081 	 kldloss: 62.129093 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 41 	 loss: nan 	 posloss: 31.717815 	 negloss: 1.295728 	 kldloss: 59.059315 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 41 	 loss: nan 	 posloss: 28.365265 	 negloss: 1.494102 	 kldloss: 57.337933 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 41 	 loss: nan 	 posloss: 27.505196 	 negloss: 0.832977 	 kldloss: 55.871143 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 42 	 loss: nan 	 posloss: 868.638062 	 negloss: 33.019093 	 kldloss: 46.951702 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 42 	 loss: nan 	 posloss: 564.375061 	 negloss: 30.766125 	 kldloss: 55.502254 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 42 	 loss: nan 	 posloss: 365.942413 	 negloss: 20.119213 	 kldloss: 59.542492 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 42 	 loss: nan 	 posloss: 214.299759 	 negloss: 12.264293 	 kldloss: 67.154312 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 42 	 loss: nan 	 posloss: 128.064758 	 negloss: 5.358075 	 kldloss: 65.770340 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 42 	 loss: nan 	 posloss: 77.479263 	 negloss: 5.226077 	 kldloss: 66.814415 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 42 	 loss: nan 	 posloss: 58.559929 	 negloss: 4.690586 	 kldloss: 63.181202 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 42 	 loss: nan 	 posloss: 35.391750 	 negloss: 2.149695 	 kldloss: 59.094406 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 42 	 loss: nan 	 posloss: 30.738604 	 negloss: 2.070800 	 kldloss: 55.924408 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 42 	 loss: nan 	 posloss: 29.028383 	 negloss: 3.138618 	 kldloss: 52.844406 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 43 	 loss: nan 	 posloss: 842.667725 	 negloss: 22.900875 	 kldloss: 62.986095 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 43 	 loss: nan 	 posloss: 475.822113 	 negloss: 29.336937 	 kldloss: 71.375755 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 43 	 loss: nan 	 posloss: 333.423218 	 negloss: 21.627176 	 kldloss: 69.446716 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 43 	 loss: nan 	 posloss: 217.848450 	 negloss: 13.693059 	 kldloss: 72.069298 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 43 	 loss: nan 	 posloss: 129.187988 	 negloss: 6.458372 	 kldloss: 74.215820 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 43 	 loss: nan 	 posloss: 85.296005 	 negloss: 6.051176 	 kldloss: 74.541313 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 43 	 loss: nan 	 posloss: 50.867233 	 negloss: 4.258511 	 kldloss: 69.524399 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 43 	 loss: nan 	 posloss: 38.337563 	 negloss: 3.767294 	 kldloss: 65.576820 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 43 	 loss: nan 	 posloss: 32.933147 	 negloss: 2.629062 	 kldloss: 64.256462 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 43 	 loss: nan 	 posloss: 42.640965 	 negloss: 3.346696 	 kldloss: 60.703960 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 44 	 loss: nan 	 posloss: 903.784912 	 negloss: 38.799843 	 kldloss: 52.904266 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 44 	 loss: nan 	 posloss: 610.811646 	 negloss: 32.103100 	 kldloss: 59.079929 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 44 	 loss: nan 	 posloss: 403.668854 	 negloss: 19.868027 	 kldloss: 64.788116 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 44 	 loss: nan 	 posloss: 264.666138 	 negloss: 12.327910 	 kldloss: 68.840828 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 44 	 loss: nan 	 posloss: 169.942688 	 negloss: 8.023986 	 kldloss: 71.069695 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 44 	 loss: nan 	 posloss: 89.693634 	 negloss: 4.199091 	 kldloss: 74.913292 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 44 	 loss: nan 	 posloss: 57.466702 	 negloss: 4.662929 	 kldloss: 69.035187 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 44 	 loss: nan 	 posloss: 32.716976 	 negloss: 2.665691 	 kldloss: 65.474350 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 44 	 loss: nan 	 posloss: 33.925892 	 negloss: 2.777077 	 kldloss: 60.464531 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 44 	 loss: nan 	 posloss: 31.225336 	 negloss: 3.124179 	 kldloss: 58.919128 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 45 	 loss: nan 	 posloss: 825.361145 	 negloss: 35.872795 	 kldloss: 56.487675 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 45 	 loss: nan 	 posloss: 530.449036 	 negloss: 30.806231 	 kldloss: 63.332317 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 45 	 loss: nan 	 posloss: 396.384552 	 negloss: 19.259487 	 kldloss: 65.217979 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 45 	 loss: nan 	 posloss: 259.990509 	 negloss: 9.152114 	 kldloss: 71.655556 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 45 	 loss: nan 	 posloss: 170.704269 	 negloss: 6.908754 	 kldloss: 73.839790 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 45 	 loss: nan 	 posloss: 101.563911 	 negloss: 3.688483 	 kldloss: 74.107941 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 45 	 loss: nan 	 posloss: 59.111637 	 negloss: 5.087743 	 kldloss: 72.267433 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 45 	 loss: nan 	 posloss: 43.180077 	 negloss: 3.537312 	 kldloss: 66.698090 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 45 	 loss: nan 	 posloss: 36.865810 	 negloss: 3.791091 	 kldloss: 64.542732 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 45 	 loss: nan 	 posloss: 31.352785 	 negloss: 3.324765 	 kldloss: 62.323483 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 46 	 loss: nan 	 posloss: 798.325439 	 negloss: 62.050819 	 kldloss: 40.549026 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 46 	 loss: nan 	 posloss: 617.931274 	 negloss: 47.431019 	 kldloss: 41.720367 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 46 	 loss: nan 	 posloss: 402.353607 	 negloss: 39.089523 	 kldloss: 49.924736 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 46 	 loss: nan 	 posloss: 266.623840 	 negloss: 22.321644 	 kldloss: 54.812122 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 46 	 loss: nan 	 posloss: 168.415909 	 negloss: 11.535171 	 kldloss: 60.002316 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 46 	 loss: nan 	 posloss: 118.479942 	 negloss: 6.701331 	 kldloss: 61.676769 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 46 	 loss: nan 	 posloss: 77.324379 	 negloss: 3.024229 	 kldloss: 59.200531 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 46 	 loss: nan 	 posloss: 47.626251 	 negloss: 3.362924 	 kldloss: 56.827999 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 46 	 loss: nan 	 posloss: 36.458889 	 negloss: 2.874313 	 kldloss: 51.503784 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 46 	 loss: nan 	 posloss: 45.826904 	 negloss: 5.117599 	 kldloss: 48.293652 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 47 	 loss: nan 	 posloss: 534.735535 	 negloss: 76.581802 	 kldloss: 33.986603 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 47 	 loss: nan 	 posloss: 327.670685 	 negloss: 57.491039 	 kldloss: 37.093822 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 47 	 loss: nan 	 posloss: 178.339706 	 negloss: 42.321960 	 kldloss: 40.084969 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 47 	 loss: nan 	 posloss: 113.619865 	 negloss: 22.339155 	 kldloss: 40.708649 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 47 	 loss: nan 	 posloss: 77.367897 	 negloss: 15.580235 	 kldloss: 38.447926 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 47 	 loss: nan 	 posloss: 57.134239 	 negloss: 9.966002 	 kldloss: 38.249882 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 47 	 loss: nan 	 posloss: 41.991306 	 negloss: 12.213574 	 kldloss: 36.029602 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 47 	 loss: nan 	 posloss: 40.700573 	 negloss: 9.680953 	 kldloss: 33.801659 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 47 	 loss: nan 	 posloss: 36.853439 	 negloss: 9.368652 	 kldloss: 34.634342 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 47 	 loss: nan 	 posloss: 31.268816 	 negloss: 7.258017 	 kldloss: 32.170914 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 48 	 loss: nan 	 posloss: 679.548645 	 negloss: 17.597790 	 kldloss: 65.612236 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 48 	 loss: nan 	 posloss: 394.315002 	 negloss: 14.003722 	 kldloss: 72.276649 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 48 	 loss: nan 	 posloss: 217.438507 	 negloss: 11.796633 	 kldloss: 74.882309 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 48 	 loss: nan 	 posloss: 143.992218 	 negloss: 3.908131 	 kldloss: 72.004028 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 48 	 loss: nan 	 posloss: 79.231041 	 negloss: 2.276437 	 kldloss: 74.941917 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 48 	 loss: nan 	 posloss: 53.549110 	 negloss: 1.946425 	 kldloss: 70.555382 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 48 	 loss: nan 	 posloss: 33.667717 	 negloss: 0.987777 	 kldloss: 65.243813 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 48 	 loss: nan 	 posloss: 26.009529 	 negloss: 1.071576 	 kldloss: 61.392384 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 48 	 loss: nan 	 posloss: 29.093277 	 negloss: 1.771719 	 kldloss: 57.132057 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 48 	 loss: nan 	 posloss: 23.127689 	 negloss: 1.430360 	 kldloss: 56.857807 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 49 	 loss: nan 	 posloss: 469.364075 	 negloss: 33.700615 	 kldloss: 40.689129 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 49 	 loss: nan 	 posloss: 290.197876 	 negloss: 32.350159 	 kldloss: 39.248249 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 49 	 loss: nan 	 posloss: 186.209717 	 negloss: 18.700426 	 kldloss: 39.955864 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 49 	 loss: nan 	 posloss: 126.253288 	 negloss: 12.328877 	 kldloss: 39.441803 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 49 	 loss: nan 	 posloss: 72.224770 	 negloss: 8.106992 	 kldloss: 39.705002 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 49 	 loss: nan 	 posloss: 55.153412 	 negloss: 6.780553 	 kldloss: 37.011028 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 49 	 loss: nan 	 posloss: 32.179272 	 negloss: 3.426265 	 kldloss: 36.715725 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 49 	 loss: nan 	 posloss: 26.032265 	 negloss: 3.567363 	 kldloss: 35.049725 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 49 	 loss: nan 	 posloss: 22.625574 	 negloss: 2.391738 	 kldloss: 34.226952 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 49 	 loss: nan 	 posloss: 25.425486 	 negloss: 3.053915 	 kldloss: 33.521904 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 50 	 loss: nan 	 posloss: 1035.457886 	 negloss: 41.374798 	 kldloss: 60.595455 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 50 	 loss: nan 	 posloss: 728.084473 	 negloss: 40.663692 	 kldloss: 62.643391 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 50 	 loss: nan 	 posloss: 494.656036 	 negloss: 24.977898 	 kldloss: 70.310867 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 50 	 loss: nan 	 posloss: 337.305939 	 negloss: 19.499531 	 kldloss: 76.292259 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 50 	 loss: nan 	 posloss: 202.930786 	 negloss: 9.075134 	 kldloss: 79.961380 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 50 	 loss: nan 	 posloss: 113.134285 	 negloss: 5.741663 	 kldloss: 83.012230 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 50 	 loss: nan 	 posloss: 80.417526 	 negloss: 5.971910 	 kldloss: 76.601860 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 50 	 loss: nan 	 posloss: 46.926617 	 negloss: 3.646436 	 kldloss: 71.319107 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 50 	 loss: nan 	 posloss: 34.538078 	 negloss: 3.270918 	 kldloss: 69.014244 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 50 	 loss: nan 	 posloss: 35.312424 	 negloss: 1.885327 	 kldloss: 64.584373 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 51 	 loss: nan 	 posloss: 774.460327 	 negloss: 28.477932 	 kldloss: 58.047985 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 51 	 loss: nan 	 posloss: 516.892273 	 negloss: 20.939024 	 kldloss: 65.029282 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 51 	 loss: nan 	 posloss: 339.710815 	 negloss: 13.429681 	 kldloss: 68.689102 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 51 	 loss: nan 	 posloss: 211.553741 	 negloss: 10.368374 	 kldloss: 72.768089 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 51 	 loss: nan 	 posloss: 125.011147 	 negloss: 6.005203 	 kldloss: 71.626762 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 51 	 loss: nan 	 posloss: 64.932053 	 negloss: 4.116127 	 kldloss: 70.843437 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 51 	 loss: nan 	 posloss: 40.988281 	 negloss: 3.115721 	 kldloss: 66.051682 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 51 	 loss: nan 	 posloss: 31.142134 	 negloss: 2.737979 	 kldloss: 62.205505 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 51 	 loss: nan 	 posloss: 24.358759 	 negloss: 1.878444 	 kldloss: 57.936790 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 51 	 loss: nan 	 posloss: 27.862249 	 negloss: 4.106251 	 kldloss: 59.360092 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 52 	 loss: nan 	 posloss: 381.952515 	 negloss: 91.966652 	 kldloss: 23.714958 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 52 	 loss: nan 	 posloss: 248.296341 	 negloss: 65.882614 	 kldloss: 20.415194 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 52 	 loss: nan 	 posloss: 183.182007 	 negloss: 59.202717 	 kldloss: 20.966528 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 52 	 loss: nan 	 posloss: 134.847641 	 negloss: 37.918415 	 kldloss: 23.120789 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 52 	 loss: nan 	 posloss: 85.489922 	 negloss: 28.722298 	 kldloss: 25.716734 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 52 	 loss: nan 	 posloss: 62.984627 	 negloss: 17.775591 	 kldloss: 25.814251 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 52 	 loss: nan 	 posloss: 46.685932 	 negloss: 17.439007 	 kldloss: 25.695320 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 52 	 loss: nan 	 posloss: 48.193428 	 negloss: 17.916948 	 kldloss: 25.164347 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 52 	 loss: nan 	 posloss: 34.053600 	 negloss: 10.281897 	 kldloss: 23.625301 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 52 	 loss: nan 	 posloss: 33.388374 	 negloss: 10.676605 	 kldloss: 23.156986 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 53 	 loss: nan 	 posloss: 425.076874 	 negloss: 11.691394 	 kldloss: 73.933113 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 53 	 loss: nan 	 posloss: 234.565521 	 negloss: 8.542863 	 kldloss: 70.778488 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 53 	 loss: nan 	 posloss: 133.580017 	 negloss: 6.005216 	 kldloss: 66.900818 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 53 	 loss: nan 	 posloss: 81.310844 	 negloss: 4.746678 	 kldloss: 60.869987 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 53 	 loss: nan 	 posloss: 52.070621 	 negloss: 1.602480 	 kldloss: 59.824615 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 53 	 loss: nan 	 posloss: 35.748016 	 negloss: 1.062448 	 kldloss: 56.875816 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 53 	 loss: nan 	 posloss: 33.957417 	 negloss: 1.710932 	 kldloss: 52.542915 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 53 	 loss: nan 	 posloss: 21.865168 	 negloss: 0.648391 	 kldloss: 50.818115 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 53 	 loss: nan 	 posloss: 22.920324 	 negloss: 0.664267 	 kldloss: 50.365364 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 53 	 loss: nan 	 posloss: 34.863972 	 negloss: 0.742248 	 kldloss: 52.115189 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 54 	 loss: nan 	 posloss: 551.316406 	 negloss: 23.873026 	 kldloss: 49.705280 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 54 	 loss: nan 	 posloss: 377.639435 	 negloss: 15.560287 	 kldloss: 52.830315 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 54 	 loss: nan 	 posloss: 238.867279 	 negloss: 8.777371 	 kldloss: 55.981956 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 54 	 loss: nan 	 posloss: 137.647812 	 negloss: 4.427838 	 kldloss: 58.452415 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 54 	 loss: nan 	 posloss: 85.992905 	 negloss: 4.102477 	 kldloss: 55.444077 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 54 	 loss: nan 	 posloss: 50.248375 	 negloss: 2.991304 	 kldloss: 56.655067 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 54 	 loss: nan 	 posloss: 31.523371 	 negloss: 2.775527 	 kldloss: 52.254318 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 54 	 loss: nan 	 posloss: 25.513397 	 negloss: 2.047234 	 kldloss: 51.204517 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 54 	 loss: nan 	 posloss: 26.356390 	 negloss: 1.967390 	 kldloss: 49.028454 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 54 	 loss: nan 	 posloss: 18.448322 	 negloss: 0.473227 	 kldloss: 49.268902 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 55 	 loss: nan 	 posloss: 1057.275024 	 negloss: 42.820625 	 kldloss: 46.388729 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 55 	 loss: nan 	 posloss: 753.810364 	 negloss: 48.004593 	 kldloss: 52.526005 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 55 	 loss: nan 	 posloss: 549.004395 	 negloss: 34.307240 	 kldloss: 59.343292 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 55 	 loss: nan 	 posloss: 369.083984 	 negloss: 23.135353 	 kldloss: 66.044685 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 55 	 loss: nan 	 posloss: 266.520691 	 negloss: 14.515040 	 kldloss: 71.031326 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 55 	 loss: nan 	 posloss: 171.438690 	 negloss: 9.183328 	 kldloss: 75.109802 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 55 	 loss: nan 	 posloss: 109.010956 	 negloss: 8.140826 	 kldloss: 74.205421 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 55 	 loss: nan 	 posloss: 69.955101 	 negloss: 6.314838 	 kldloss: 71.814186 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 55 	 loss: nan 	 posloss: 48.016991 	 negloss: 4.045166 	 kldloss: 69.258469 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 55 	 loss: nan 	 posloss: 37.129826 	 negloss: 2.970977 	 kldloss: 63.177589 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 56 	 loss: nan 	 posloss: 528.832031 	 negloss: 27.749268 	 kldloss: 41.395176 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 56 	 loss: nan 	 posloss: 304.522644 	 negloss: 22.640202 	 kldloss: 46.797867 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 56 	 loss: nan 	 posloss: 160.914642 	 negloss: 15.328337 	 kldloss: 45.598545 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 56 	 loss: nan 	 posloss: 113.434303 	 negloss: 12.603664 	 kldloss: 46.175781 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 56 	 loss: nan 	 posloss: 80.373917 	 negloss: 9.113271 	 kldloss: 45.286938 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 56 	 loss: nan 	 posloss: 51.597099 	 negloss: 5.194085 	 kldloss: 43.257458 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 56 	 loss: nan 	 posloss: 34.485378 	 negloss: 5.233049 	 kldloss: 42.161449 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 56 	 loss: nan 	 posloss: 32.003189 	 negloss: 4.925179 	 kldloss: 39.387032 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 56 	 loss: nan 	 posloss: 31.016016 	 negloss: 3.598389 	 kldloss: 38.357780 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 56 	 loss: nan 	 posloss: 21.721004 	 negloss: 3.555486 	 kldloss: 36.353905 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 57 	 loss: nan 	 posloss: 751.257202 	 negloss: 27.340488 	 kldloss: 72.798950 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 57 	 loss: nan 	 posloss: 453.858612 	 negloss: 19.788572 	 kldloss: 73.308449 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 57 	 loss: nan 	 posloss: 282.918091 	 negloss: 11.053617 	 kldloss: 79.067024 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 57 	 loss: nan 	 posloss: 170.704880 	 negloss: 6.892255 	 kldloss: 80.718750 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 57 	 loss: nan 	 posloss: 100.327354 	 negloss: 5.606331 	 kldloss: 78.984825 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 57 	 loss: nan 	 posloss: 56.099747 	 negloss: 3.724457 	 kldloss: 73.093544 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 57 	 loss: nan 	 posloss: 42.293777 	 negloss: 2.835639 	 kldloss: 68.291351 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 57 	 loss: nan 	 posloss: 35.469048 	 negloss: 3.619710 	 kldloss: 64.127922 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 57 	 loss: nan 	 posloss: 28.507687 	 negloss: 2.520537 	 kldloss: 64.181755 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 57 	 loss: nan 	 posloss: 29.844343 	 negloss: 3.339494 	 kldloss: 61.254215 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 58 	 loss: nan 	 posloss: 499.065796 	 negloss: 26.260715 	 kldloss: 52.422325 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 58 	 loss: nan 	 posloss: 274.375977 	 negloss: 20.125957 	 kldloss: 53.851974 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 58 	 loss: nan 	 posloss: 179.872055 	 negloss: 12.238508 	 kldloss: 52.966263 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 58 	 loss: nan 	 posloss: 113.493729 	 negloss: 9.350834 	 kldloss: 52.426220 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 58 	 loss: nan 	 posloss: 64.914780 	 negloss: 4.981598 	 kldloss: 50.024612 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 58 	 loss: nan 	 posloss: 41.112316 	 negloss: 2.968450 	 kldloss: 51.034302 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 58 	 loss: nan 	 posloss: 42.118828 	 negloss: 1.864244 	 kldloss: 47.270893 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 58 	 loss: nan 	 posloss: 22.817711 	 negloss: 1.249110 	 kldloss: 45.216324 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 58 	 loss: nan 	 posloss: 25.611189 	 negloss: 1.730718 	 kldloss: 42.663849 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 58 	 loss: nan 	 posloss: 21.172684 	 negloss: 2.501726 	 kldloss: 42.051060 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 59 	 loss: nan 	 posloss: 623.980591 	 negloss: 92.394867 	 kldloss: 30.606491 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 59 	 loss: nan 	 posloss: 446.613251 	 negloss: 64.106506 	 kldloss: 31.707956 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 59 	 loss: nan 	 posloss: 260.487793 	 negloss: 38.803757 	 kldloss: 36.452858 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 59 	 loss: nan 	 posloss: 177.444366 	 negloss: 27.467508 	 kldloss: 38.374908 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 59 	 loss: nan 	 posloss: 113.137138 	 negloss: 14.259946 	 kldloss: 37.387661 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 59 	 loss: nan 	 posloss: 80.667038 	 negloss: 11.625038 	 kldloss: 37.878635 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 59 	 loss: nan 	 posloss: 55.460972 	 negloss: 9.522573 	 kldloss: 38.160126 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 59 	 loss: nan 	 posloss: 50.505779 	 negloss: 12.271730 	 kldloss: 36.321693 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 59 	 loss: nan 	 posloss: 38.375790 	 negloss: 6.184710 	 kldloss: 36.857445 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 59 	 loss: nan 	 posloss: 34.210068 	 negloss: 9.855727 	 kldloss: 33.548882 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 60 	 loss: nan 	 posloss: 267.850830 	 negloss: 45.199707 	 kldloss: 22.446995 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 60 	 loss: nan 	 posloss: 188.882904 	 negloss: 30.586868 	 kldloss: 21.073774 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 60 	 loss: nan 	 posloss: 115.339424 	 negloss: 21.343512 	 kldloss: 21.471979 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 60 	 loss: nan 	 posloss: 80.204727 	 negloss: 15.247526 	 kldloss: 21.134998 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 60 	 loss: nan 	 posloss: 58.208775 	 negloss: 8.199610 	 kldloss: 21.404144 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 60 	 loss: nan 	 posloss: 31.647516 	 negloss: 5.947456 	 kldloss: 20.361526 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 60 	 loss: nan 	 posloss: 34.277374 	 negloss: 7.358377 	 kldloss: 21.342518 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 60 	 loss: nan 	 posloss: 19.609756 	 negloss: 4.789792 	 kldloss: 19.354818 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 60 	 loss: nan 	 posloss: 26.035681 	 negloss: 5.174916 	 kldloss: 21.150732 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 60 	 loss: nan 	 posloss: 24.134897 	 negloss: 6.145923 	 kldloss: 19.904497 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 61 	 loss: nan 	 posloss: 669.666687 	 negloss: 17.751413 	 kldloss: 83.201942 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 61 	 loss: nan 	 posloss: 405.218201 	 negloss: 22.463621 	 kldloss: 80.293617 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 61 	 loss: nan 	 posloss: 241.397552 	 negloss: 15.920573 	 kldloss: 82.502731 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 61 	 loss: nan 	 posloss: 140.546555 	 negloss: 9.950827 	 kldloss: 82.259644 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 61 	 loss: nan 	 posloss: 80.570168 	 negloss: 7.194413 	 kldloss: 81.074188 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 61 	 loss: nan 	 posloss: 48.540474 	 negloss: 5.503156 	 kldloss: 74.816521 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 61 	 loss: nan 	 posloss: 37.907967 	 negloss: 3.883875 	 kldloss: 69.933075 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 61 	 loss: nan 	 posloss: 32.861637 	 negloss: 2.707210 	 kldloss: 66.657455 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 61 	 loss: nan 	 posloss: 26.181852 	 negloss: 2.629611 	 kldloss: 64.949287 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 61 	 loss: nan 	 posloss: 26.052641 	 negloss: 1.536302 	 kldloss: 63.794540 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 62 	 loss: nan 	 posloss: 592.470459 	 negloss: 27.549585 	 kldloss: 62.330250 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 62 	 loss: nan 	 posloss: 314.928741 	 negloss: 15.428179 	 kldloss: 64.766998 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 62 	 loss: nan 	 posloss: 175.555389 	 negloss: 6.221572 	 kldloss: 66.520119 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 62 	 loss: nan 	 posloss: 94.869987 	 negloss: 3.785933 	 kldloss: 65.328247 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 62 	 loss: nan 	 posloss: 59.005959 	 negloss: 2.872495 	 kldloss: 60.589996 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 62 	 loss: nan 	 posloss: 35.062248 	 negloss: 0.964878 	 kldloss: 57.215614 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 62 	 loss: nan 	 posloss: 29.881479 	 negloss: 1.713148 	 kldloss: 54.022652 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 62 	 loss: nan 	 posloss: 23.512213 	 negloss: 0.819276 	 kldloss: 52.433044 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 62 	 loss: nan 	 posloss: 24.436481 	 negloss: 1.409191 	 kldloss: 53.852470 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 62 	 loss: nan 	 posloss: 23.451771 	 negloss: 2.454561 	 kldloss: 52.131340 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 63 	 loss: nan 	 posloss: 811.042542 	 negloss: 30.276121 	 kldloss: 58.151752 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 63 	 loss: nan 	 posloss: 540.655151 	 negloss: 29.871407 	 kldloss: 62.545147 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 63 	 loss: nan 	 posloss: 368.011810 	 negloss: 19.365961 	 kldloss: 65.836769 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 63 	 loss: nan 	 posloss: 239.951004 	 negloss: 13.321551 	 kldloss: 66.989868 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 63 	 loss: nan 	 posloss: 183.692139 	 negloss: 10.894939 	 kldloss: 68.679008 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 63 	 loss: nan 	 posloss: 120.278397 	 negloss: 9.858202 	 kldloss: 67.466812 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 63 	 loss: nan 	 posloss: 75.939720 	 negloss: 5.533304 	 kldloss: 65.621101 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 63 	 loss: nan 	 posloss: 60.590401 	 negloss: 4.037617 	 kldloss: 63.865002 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 63 	 loss: nan 	 posloss: 40.644360 	 negloss: 3.468390 	 kldloss: 59.123978 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 63 	 loss: nan 	 posloss: 29.825560 	 negloss: 2.355093 	 kldloss: 57.787956 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 64 	 loss: nan 	 posloss: 925.010315 	 negloss: 42.353680 	 kldloss: 59.897171 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 64 	 loss: nan 	 posloss: 681.389099 	 negloss: 34.952759 	 kldloss: 57.826035 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 64 	 loss: nan 	 posloss: 470.030975 	 negloss: 23.319159 	 kldloss: 62.657597 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 64 	 loss: nan 	 posloss: 304.335907 	 negloss: 17.022911 	 kldloss: 71.130013 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 64 	 loss: nan 	 posloss: 190.224426 	 negloss: 8.576157 	 kldloss: 73.693626 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 64 	 loss: nan 	 posloss: 109.857124 	 negloss: 4.673705 	 kldloss: 74.511986 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 64 	 loss: nan 	 posloss: 73.567413 	 negloss: 3.771354 	 kldloss: 72.167747 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 64 	 loss: nan 	 posloss: 45.058388 	 negloss: 2.620932 	 kldloss: 66.365211 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 64 	 loss: nan 	 posloss: 37.267117 	 negloss: 2.327619 	 kldloss: 63.728626 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 64 	 loss: nan 	 posloss: 28.663816 	 negloss: 3.041987 	 kldloss: 63.051113 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 65 	 loss: nan 	 posloss: 1017.647400 	 negloss: 39.598198 	 kldloss: 62.682446 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 65 	 loss: nan 	 posloss: 730.107544 	 negloss: 33.047527 	 kldloss: 63.344521 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 65 	 loss: nan 	 posloss: 515.705811 	 negloss: 21.187119 	 kldloss: 68.255417 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 65 	 loss: nan 	 posloss: 341.391388 	 negloss: 13.871909 	 kldloss: 74.706734 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 65 	 loss: nan 	 posloss: 233.166290 	 negloss: 13.338015 	 kldloss: 78.335419 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 65 	 loss: nan 	 posloss: 139.030197 	 negloss: 5.401711 	 kldloss: 80.889168 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 65 	 loss: nan 	 posloss: 78.767624 	 negloss: 5.260782 	 kldloss: 78.397224 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 65 	 loss: nan 	 posloss: 56.702549 	 negloss: 5.662561 	 kldloss: 70.348885 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 65 	 loss: nan 	 posloss: 40.508808 	 negloss: 3.320511 	 kldloss: 70.502411 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 65 	 loss: nan 	 posloss: 42.306072 	 negloss: 3.342243 	 kldloss: 67.825356 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 66 	 loss: nan 	 posloss: 979.535767 	 negloss: 28.576757 	 kldloss: 55.391899 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 66 	 loss: nan 	 posloss: 637.341064 	 negloss: 30.070301 	 kldloss: 62.361252 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 66 	 loss: nan 	 posloss: 412.022644 	 negloss: 24.948776 	 kldloss: 69.990196 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 66 	 loss: nan 	 posloss: 282.563232 	 negloss: 15.050710 	 kldloss: 72.265099 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 66 	 loss: nan 	 posloss: 173.237320 	 negloss: 8.413054 	 kldloss: 77.332726 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 66 	 loss: nan 	 posloss: 114.683983 	 negloss: 8.952838 	 kldloss: 75.205574 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 66 	 loss: nan 	 posloss: 65.798180 	 negloss: 4.004078 	 kldloss: 72.576645 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 66 	 loss: nan 	 posloss: 44.800522 	 negloss: 4.139207 	 kldloss: 70.503487 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 66 	 loss: nan 	 posloss: 36.021904 	 negloss: 1.988021 	 kldloss: 65.457634 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 66 	 loss: nan 	 posloss: 30.438082 	 negloss: 3.173700 	 kldloss: 62.085846 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 67 	 loss: nan 	 posloss: 746.120850 	 negloss: 39.922260 	 kldloss: 43.193867 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 67 	 loss: nan 	 posloss: 527.728210 	 negloss: 34.876572 	 kldloss: 46.108387 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 67 	 loss: nan 	 posloss: 347.886841 	 negloss: 26.879200 	 kldloss: 52.546902 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 67 	 loss: nan 	 posloss: 265.070740 	 negloss: 19.683041 	 kldloss: 54.830830 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 67 	 loss: nan 	 posloss: 179.410706 	 negloss: 11.643072 	 kldloss: 57.669151 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 67 	 loss: nan 	 posloss: 115.011322 	 negloss: 8.551578 	 kldloss: 61.106583 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 67 	 loss: nan 	 posloss: 72.127151 	 negloss: 5.892504 	 kldloss: 59.279076 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 67 	 loss: nan 	 posloss: 57.256207 	 negloss: 5.373183 	 kldloss: 56.463703 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 67 	 loss: nan 	 posloss: 41.119549 	 negloss: 5.018721 	 kldloss: 53.304703 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 67 	 loss: nan 	 posloss: 29.363966 	 negloss: 3.754700 	 kldloss: 51.953423 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 68 	 loss: nan 	 posloss: 359.376251 	 negloss: 27.078953 	 kldloss: 45.755962 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 68 	 loss: nan 	 posloss: 224.442535 	 negloss: 20.698767 	 kldloss: 44.582287 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 68 	 loss: nan 	 posloss: 109.409225 	 negloss: 9.702757 	 kldloss: 42.694820 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 68 	 loss: nan 	 posloss: 79.112144 	 negloss: 7.665399 	 kldloss: 39.391426 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 68 	 loss: nan 	 posloss: 50.630558 	 negloss: 4.038111 	 kldloss: 38.962799 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 68 	 loss: nan 	 posloss: 38.874054 	 negloss: 4.287394 	 kldloss: 38.078438 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 68 	 loss: nan 	 posloss: 24.873291 	 negloss: 3.342098 	 kldloss: 36.886272 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 68 	 loss: nan 	 posloss: 30.537945 	 negloss: 5.560166 	 kldloss: 35.760307 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 68 	 loss: nan 	 posloss: 23.977631 	 negloss: 4.592307 	 kldloss: 33.580544 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 68 	 loss: nan 	 posloss: 18.282656 	 negloss: 1.568256 	 kldloss: 33.949951 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 10	 task: 0 	 category: 69 	 loss: nan 	 posloss: 451.160248 	 negloss: 20.726683 	 kldloss: 53.620922 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 20	 task: 0 	 category: 69 	 loss: nan 	 posloss: 240.349823 	 negloss: 12.481880 	 kldloss: 53.914680 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 30	 task: 0 	 category: 69 	 loss: nan 	 posloss: 142.705917 	 negloss: 6.187374 	 kldloss: 52.134148 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 40	 task: 0 	 category: 69 	 loss: nan 	 posloss: 98.802818 	 negloss: 4.313539 	 kldloss: 53.189754 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 50	 task: 0 	 category: 69 	 loss: nan 	 posloss: 63.270107 	 negloss: 3.742531 	 kldloss: 50.880432 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 60	 task: 0 	 category: 69 	 loss: nan 	 posloss: 35.094364 	 negloss: 2.706685 	 kldloss: 47.891666 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 70	 task: 0 	 category: 69 	 loss: nan 	 posloss: 27.185699 	 negloss: 2.488547 	 kldloss: 47.697170 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 80	 task: 0 	 category: 69 	 loss: nan 	 posloss: 22.890778 	 negloss: 1.570040 	 kldloss: 44.885307 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 90	 task: 0 	 category: 69 	 loss: nan 	 posloss: 22.685001 	 negloss: 2.550682 	 kldloss: 44.371548 	 maxloss: 0.000000 	 pseudoloss: nan
+epoch: 100	 task: 0 	 category: 69 	 loss: nan 	 posloss: 20.859907 	 negloss: 1.160497 	 kldloss: 44.066833 	 maxloss: 0.000000 	 pseudoloss: nan
+(7000, 1000)
+类别 0 AOC: 0.9979971014492753
+类别 1 AOC: 0.9848869565217392
+类别 2 AOC: 0.9606463768115941
+类别 3 AOC: 0.9526695652173913
+类别 4 AOC: 0.9572985507246378
+类别 5 AOC: 0.9849130434782609
+类别 6 AOC: 0.9826623188405798
+类别 7 AOC: 0.9759478260869565
+类别 8 AOC: 0.9954217391304347
+类别 9 AOC: 0.9956072463768117
+类别 10 AOC: 0.9752304347826087
+类别 11 AOC: 0.9649898550724638
+类别 12 AOC: 0.9848666666666667
+类别 13 AOC: 0.9919637681159421
+类别 14 AOC: 0.9709521739130434
+类别 15 AOC: 0.9668927536231884
+类别 16 AOC: 0.9877811594202898
+类别 17 AOC: 0.9914608695652174
+类别 18 AOC: 0.9656014492753622
+类别 19 AOC: 0.9704014492753623
+类别 20 AOC: 0.9949884057971015
+类别 21 AOC: 0.9963304347826086
+类别 22 AOC: 0.9883608695652174
+类别 23 AOC: 0.9950826086956522
+类别 24 AOC: 0.9934043478260869
+类别 25 AOC: 0.9790797101449276
+类别 26 AOC: 0.9560652173913042
+类别 27 AOC: 0.9603304347826087
+类别 28 AOC: 0.9899028985507247
+类别 29 AOC: 0.9605739130434783
+类别 30 AOC: 0.9850753623188406
+类别 31 AOC: 0.9839942028985506
+类别 32 AOC: 0.942136231884058
+类别 33 AOC: 0.9764927536231884
+类别 34 AOC: 0.9808768115942029
+类别 35 AOC: 0.9556826086956522
+类别 36 AOC: 0.9895217391304347
+类别 37 AOC: 0.9803391304347827
+类别 38 AOC: 0.9577463768115942
+类别 39 AOC: 0.9961753623188406
+类别 40 AOC: 0.9887275362318839
+类别 41 AOC: 0.9975782608695652
+类别 42 AOC: 0.9769318840579709
+类别 43 AOC: 0.9828724637681161
+类别 44 AOC: 0.9658782608695653
+类别 45 AOC: 0.932304347826087
+类别 46 AOC: 0.9587376811594204
+类别 47 AOC: 0.9757811594202898
+类别 48 AOC: 0.996563768115942
+类别 49 AOC: 0.9960434782608697
+类别 50 AOC: 0.9429942028985506
+类别 51 AOC: 0.9786144927536232
+类别 52 AOC: 0.9766304347826087
+类别 53 AOC: 0.9979405797101449
+类别 54 AOC: 0.9907666666666667
+类别 55 AOC: 0.9581420289855072
+类别 56 AOC: 0.9826579710144928
+类别 57 AOC: 0.9667289855072465
+类别 58 AOC: 0.9800826086956522
+类别 59 AOC: 0.9562637681159419
+类别 60 AOC: 0.9918768115942028
+类别 61 AOC: 0.9909579710144928
+类别 62 AOC: 0.9826014492753623
+类别 63 AOC: 0.9654188405797102
+类别 64 AOC: 0.9443144927536232
+类别 65 AOC: 0.9458492753623189
+类别 66 AOC: 0.9612376811594204
+类别 67 AOC: 0.9741579710144928
+类别 68 AOC: 0.9936376811594203
+类别 69 AOC: 0.9967289855072464
+first stage all_acc: 0.6944285714285714
+stage: 0
+cluster,task 0 : 0.6901428571428572
+Training the autoencoder...
+Saving weights.
+Training VaDE...
+reset dataset with prev_categories [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69]
+==========	 task: 1	 categories: [70, 71, 72, 73, 74, 75, 76, 77, 78, 79] 	==========
+epoch: 10	 task: 1 	 category: 70 	 loss: 71.304938 	 posloss: 2844.005615 	 negloss: 1.880241 	 kldloss: 171.275070 	 maxloss: 0.000000 	 pseudoloss: 15.527271
+epoch: 20	 task: 1 	 category: 70 	 loss: 41.723780 	 posloss: 1951.965820 	 negloss: 6.659479 	 kldloss: 197.872925 	 maxloss: 0.000000 	 pseudoloss: 9.329910
+epoch: 30	 task: 1 	 category: 70 	 loss: 31.414554 	 posloss: 1550.759033 	 negloss: 10.202188 	 kldloss: 177.899414 	 maxloss: 0.000000 	 pseudoloss: 8.943590
+epoch: 40	 task: 1 	 category: 70 	 loss: 26.158833 	 posloss: 1319.398804 	 negloss: 4.488201 	 kldloss: 159.561386 	 maxloss: 0.000000 	 pseudoloss: 5.414260
+epoch: 50	 task: 1 	 category: 70 	 loss: 22.515708 	 posloss: 1168.986572 	 negloss: 6.618900 	 kldloss: 151.858215 	 maxloss: 0.000000 	 pseudoloss: 3.072335
+epoch: 60	 task: 1 	 category: 70 	 loss: 20.098422 	 posloss: 1043.205811 	 negloss: 7.846319 	 kldloss: 149.838165 	 maxloss: 0.000000 	 pseudoloss: 4.332249
+epoch: 70	 task: 1 	 category: 70 	 loss: 17.781901 	 posloss: 906.807434 	 negloss: 8.581182 	 kldloss: 149.071884 	 maxloss: 0.000000 	 pseudoloss: 3.990462
+epoch: 80	 task: 1 	 category: 70 	 loss: 15.982559 	 posloss: 810.086487 	 negloss: 5.703049 	 kldloss: 145.634918 	 maxloss: 0.000000 	 pseudoloss: 3.236302
+epoch: 90	 task: 1 	 category: 70 	 loss: 14.763974 	 posloss: 742.912292 	 negloss: 10.699569 	 kldloss: 142.038544 	 maxloss: 0.000000 	 pseudoloss: 3.095292
+epoch: 100	 task: 1 	 category: 70 	 loss: 13.092006 	 posloss: 652.838135 	 negloss: 8.243120 	 kldloss: 140.425400 	 maxloss: 0.000000 	 pseudoloss: 2.621987
+epoch: 10	 task: 1 	 category: 71 	 loss: nan 	 posloss: 1170.824219 	 negloss: 3.501271 	 kldloss: 105.853111 	 maxloss: 0.000000 	 pseudoloss: 33.144619
+epoch: 20	 task: 1 	 category: 71 	 loss: nan 	 posloss: 1078.342407 	 negloss: 4.222632 	 kldloss: 73.529495 	 maxloss: 0.000000 	 pseudoloss: 5.091144
+epoch: 30	 task: 1 	 category: 71 	 loss: nan 	 posloss: 950.070312 	 negloss: 3.217743 	 kldloss: 68.468239 	 maxloss: 0.000000 	 pseudoloss: 8.441394
+epoch: 40	 task: 1 	 category: 71 	 loss: nan 	 posloss: 839.874634 	 negloss: 3.631101 	 kldloss: 58.002590 	 maxloss: 0.000000 	 pseudoloss: 5.441716
+epoch: 50	 task: 1 	 category: 71 	 loss: nan 	 posloss: 734.406372 	 negloss: 4.373276 	 kldloss: 69.429947 	 maxloss: 0.000000 	 pseudoloss: 4.770418
+epoch: 60	 task: 1 	 category: 71 	 loss: nan 	 posloss: 607.862976 	 negloss: 5.093830 	 kldloss: 76.252335 	 maxloss: 0.000000 	 pseudoloss: 4.192561
+epoch: 70	 task: 1 	 category: 71 	 loss: nan 	 posloss: 504.657593 	 negloss: 8.291481 	 kldloss: 77.034775 	 maxloss: 0.000000 	 pseudoloss: 12.746958
+epoch: 80	 task: 1 	 category: 71 	 loss: nan 	 posloss: 424.254761 	 negloss: 6.240128 	 kldloss: 77.083160 	 maxloss: 0.000000 	 pseudoloss: 4.070362
+epoch: 90	 task: 1 	 category: 71 	 loss: nan 	 posloss: 348.074402 	 negloss: 4.767860 	 kldloss: 73.883896 	 maxloss: 0.000000 	 pseudoloss: 0.853782
+epoch: 100	 task: 1 	 category: 71 	 loss: nan 	 posloss: 287.377350 	 negloss: 6.328774 	 kldloss: 71.163322 	 maxloss: 0.000000 	 pseudoloss: 2.696708
+epoch: 10	 task: 1 	 category: 72 	 loss: 24.796548 	 posloss: 1293.944214 	 negloss: 0.000000 	 kldloss: 84.902092 	 maxloss: 0.000000 	 pseudoloss: 53.165722
+epoch: 20	 task: 1 	 category: 72 	 loss: 21.810410 	 posloss: 1177.559814 	 negloss: 0.000000 	 kldloss: 59.656239 	 maxloss: 0.000000 	 pseudoloss: 7.521095
+epoch: 30	 task: 1 	 category: 72 	 loss: 16.677034 	 posloss: 868.626526 	 negloss: 2.843204 	 kldloss: 67.504707 	 maxloss: 0.000000 	 pseudoloss: 5.850389
+epoch: 40	 task: 1 	 category: 72 	 loss: 13.982861 	 posloss: 774.745605 	 negloss: 2.007027 	 kldloss: 63.288612 	 maxloss: 0.000000 	 pseudoloss: 2.571055
+epoch: 50	 task: 1 	 category: 72 	 loss: nan 	 posloss: 640.308899 	 negloss: 1.044864 	 kldloss: 66.883904 	 maxloss: 0.000000 	 pseudoloss: 5.039778
+epoch: 60	 task: 1 	 category: 72 	 loss: 10.220053 	 posloss: 551.164795 	 negloss: 4.099982 	 kldloss: 61.004627 	 maxloss: 0.000000 	 pseudoloss: 3.243404
+epoch: 70	 task: 1 	 category: 72 	 loss: 9.822788 	 posloss: 472.680664 	 negloss: 9.875875 	 kldloss: 63.665356 	 maxloss: 0.000000 	 pseudoloss: 3.203000
+epoch: 80	 task: 1 	 category: 72 	 loss: 7.686131 	 posloss: 414.898010 	 negloss: 3.830202 	 kldloss: 59.105961 	 maxloss: 0.000000 	 pseudoloss: 3.036054
+epoch: 90	 task: 1 	 category: 72 	 loss: 6.743591 	 posloss: 351.436249 	 negloss: 11.142075 	 kldloss: 62.945522 	 maxloss: 0.000000 	 pseudoloss: 2.783276
+epoch: 100	 task: 1 	 category: 72 	 loss: 6.337645 	 posloss: 307.507446 	 negloss: 7.390698 	 kldloss: 65.716286 	 maxloss: 0.000000 	 pseudoloss: 4.445003
+epoch: 10	 task: 1 	 category: 73 	 loss: 31.863036 	 posloss: 1382.247314 	 negloss: 8.496620 	 kldloss: 113.536232 	 maxloss: 0.000000 	 pseudoloss: 196.853653
+epoch: 20	 task: 1 	 category: 73 	 loss: 23.979214 	 posloss: 1189.202637 	 negloss: 6.219266 	 kldloss: 68.669525 	 maxloss: 0.000000 	 pseudoloss: 16.078552
+epoch: 30	 task: 1 	 category: 73 	 loss: nan 	 posloss: 924.891174 	 negloss: 9.595231 	 kldloss: 64.110748 	 maxloss: 0.000000 	 pseudoloss: 8.595052
+epoch: 40	 task: 1 	 category: 73 	 loss: 15.165422 	 posloss: 782.979126 	 negloss: 4.875210 	 kldloss: 65.784966 	 maxloss: 0.000000 	 pseudoloss: 5.873443
+epoch: 50	 task: 1 	 category: 73 	 loss: 12.372469 	 posloss: 672.869751 	 negloss: 5.282948 	 kldloss: 67.059853 	 maxloss: 0.000000 	 pseudoloss: 6.344331
+epoch: 60	 task: 1 	 category: 73 	 loss: 11.933760 	 posloss: 600.553955 	 negloss: 5.821853 	 kldloss: 63.144302 	 maxloss: 0.000000 	 pseudoloss: 3.959342
+epoch: 70	 task: 1 	 category: 73 	 loss: 9.873899 	 posloss: 486.574585 	 negloss: 4.831542 	 kldloss: 66.025063 	 maxloss: 0.000000 	 pseudoloss: 3.715593
+epoch: 80	 task: 1 	 category: 73 	 loss: 7.787795 	 posloss: 401.635468 	 negloss: 1.496058 	 kldloss: 68.615341 	 maxloss: 0.000000 	 pseudoloss: 3.102074
+epoch: 90	 task: 1 	 category: 73 	 loss: nan 	 posloss: 348.646423 	 negloss: 3.326231 	 kldloss: 69.482086 	 maxloss: 0.000000 	 pseudoloss: 4.785204
+epoch: 100	 task: 1 	 category: 73 	 loss: 5.532949 	 posloss: 271.943085 	 negloss: 4.402816 	 kldloss: 68.563797 	 maxloss: 0.000000 	 pseudoloss: 2.749079
+epoch: 10	 task: 1 	 category: 74 	 loss: 49.733189 	 posloss: 2247.613037 	 negloss: 2.812512 	 kldloss: 153.066086 	 maxloss: 0.000000 	 pseudoloss: 28.217434
+epoch: 20	 task: 1 	 category: 74 	 loss: nan 	 posloss: 1883.681030 	 negloss: 2.814386 	 kldloss: 117.734352 	 maxloss: 0.000000 	 pseudoloss: 11.560260
+epoch: 30	 task: 1 	 category: 74 	 loss: nan 	 posloss: 1599.540161 	 negloss: 4.344529 	 kldloss: 108.233856 	 maxloss: 0.000000 	 pseudoloss: 6.952546
+epoch: 40	 task: 1 	 category: 74 	 loss: 26.962510 	 posloss: 1346.814087 	 negloss: 8.339293 	 kldloss: 112.848175 	 maxloss: 0.000000 	 pseudoloss: 4.558012
+epoch: 50	 task: 1 	 category: 74 	 loss: nan 	 posloss: 1191.035645 	 negloss: 12.105270 	 kldloss: 109.327866 	 maxloss: 0.000000 	 pseudoloss: 6.026303
+epoch: 60	 task: 1 	 category: 74 	 loss: 19.706687 	 posloss: 1048.210815 	 negloss: 5.316931 	 kldloss: 111.792664 	 maxloss: 0.000000 	 pseudoloss: 4.634187
+epoch: 70	 task: 1 	 category: 74 	 loss: nan 	 posloss: 951.651733 	 negloss: 2.888943 	 kldloss: 111.139282 	 maxloss: 0.000000 	 pseudoloss: 6.133029
+epoch: 80	 task: 1 	 category: 74 	 loss: 16.192099 	 posloss: 874.234314 	 negloss: 6.134187 	 kldloss: 108.014473 	 maxloss: 0.000000 	 pseudoloss: 5.805788
+epoch: 90	 task: 1 	 category: 74 	 loss: 14.558543 	 posloss: 763.858215 	 negloss: 4.579679 	 kldloss: 106.950630 	 maxloss: 0.000000 	 pseudoloss: 2.798296
+epoch: 100	 task: 1 	 category: 74 	 loss: nan 	 posloss: 691.279053 	 negloss: 2.293539 	 kldloss: 113.204491 	 maxloss: 0.000000 	 pseudoloss: 4.797595
+epoch: 10	 task: 1 	 category: 75 	 loss: 32.352591 	 posloss: 1583.387329 	 negloss: 5.492199 	 kldloss: 99.823105 	 maxloss: 0.000000 	 pseudoloss: 16.023787
+epoch: 20	 task: 1 	 category: 75 	 loss: 26.817841 	 posloss: 1358.519775 	 negloss: 8.605697 	 kldloss: 80.535484 	 maxloss: 0.000000 	 pseudoloss: 5.992190
+epoch: 30	 task: 1 	 category: 75 	 loss: 20.665140 	 posloss: 1067.226074 	 negloss: 15.791762 	 kldloss: 86.307495 	 maxloss: 0.000000 	 pseudoloss: 4.323679
+epoch: 40	 task: 1 	 category: 75 	 loss: 17.769298 	 posloss: 923.616638 	 negloss: 11.824628 	 kldloss: 89.432838 	 maxloss: 0.000000 	 pseudoloss: 4.066747
+epoch: 50	 task: 1 	 category: 75 	 loss: 15.319954 	 posloss: 802.297424 	 negloss: 15.139418 	 kldloss: 85.086258 	 maxloss: 0.000000 	 pseudoloss: 5.386750
+epoch: 60	 task: 1 	 category: 75 	 loss: 13.647306 	 posloss: 695.005737 	 negloss: 20.034067 	 kldloss: 86.354408 	 maxloss: 0.000000 	 pseudoloss: 5.073277
+epoch: 70	 task: 1 	 category: 75 	 loss: 11.841847 	 posloss: 616.287537 	 negloss: 21.054766 	 kldloss: 85.141388 	 maxloss: 0.000000 	 pseudoloss: 4.448067
+epoch: 80	 task: 1 	 category: 75 	 loss: 10.341313 	 posloss: 523.947388 	 negloss: 11.570670 	 kldloss: 85.898117 	 maxloss: 0.000000 	 pseudoloss: 2.404439
+epoch: 90	 task: 1 	 category: 75 	 loss: 9.149428 	 posloss: 457.630157 	 negloss: 12.135017 	 kldloss: 88.103752 	 maxloss: 0.000000 	 pseudoloss: 3.938246
+epoch: 100	 task: 1 	 category: 75 	 loss: 7.560841 	 posloss: 370.985687 	 negloss: 8.020253 	 kldloss: 85.620560 	 maxloss: 0.000000 	 pseudoloss: 2.950277
+epoch: 10	 task: 1 	 category: 76 	 loss: 27.696963 	 posloss: 1388.414307 	 negloss: 0.000000 	 kldloss: 82.411484 	 maxloss: 0.000000 	 pseudoloss: 69.886505
+epoch: 20	 task: 1 	 category: 76 	 loss: nan 	 posloss: 1169.853271 	 negloss: 1.224104 	 kldloss: 65.512291 	 maxloss: 0.000000 	 pseudoloss: 7.188270
+epoch: 30	 task: 1 	 category: 76 	 loss: nan 	 posloss: 876.132751 	 negloss: 15.662719 	 kldloss: 70.379921 	 maxloss: 0.000000 	 pseudoloss: 8.854921
+epoch: 40	 task: 1 	 category: 76 	 loss: nan 	 posloss: 709.759827 	 negloss: 8.814760 	 kldloss: 70.720123 	 maxloss: 0.000000 	 pseudoloss: 4.145659
+epoch: 50	 task: 1 	 category: 76 	 loss: 12.106182 	 posloss: 635.031616 	 negloss: 3.006206 	 kldloss: 64.457298 	 maxloss: 0.000000 	 pseudoloss: 2.524956
+epoch: 60	 task: 1 	 category: 76 	 loss: nan 	 posloss: 589.002625 	 negloss: 6.798122 	 kldloss: 64.399063 	 maxloss: 0.000000 	 pseudoloss: 7.360577
+epoch: 70	 task: 1 	 category: 76 	 loss: nan 	 posloss: 487.892822 	 negloss: 6.538300 	 kldloss: 68.154724 	 maxloss: 0.000000 	 pseudoloss: 7.270370
+epoch: 80	 task: 1 	 category: 76 	 loss: 8.255295 	 posloss: 408.478638 	 negloss: 3.086475 	 kldloss: 69.607971 	 maxloss: 0.000000 	 pseudoloss: 10.781911
+epoch: 90	 task: 1 	 category: 76 	 loss: nan 	 posloss: 347.102386 	 negloss: 0.782287 	 kldloss: 67.089493 	 maxloss: 0.000000 	 pseudoloss: 3.429713
+epoch: 100	 task: 1 	 category: 76 	 loss: nan 	 posloss: 289.728851 	 negloss: 0.809574 	 kldloss: 69.444992 	 maxloss: 0.000000 	 pseudoloss: 3.079038
+epoch: 10	 task: 1 	 category: 77 	 loss: 20.717625 	 posloss: 1201.222900 	 negloss: 1.465249 	 kldloss: 73.213028 	 maxloss: 0.000000 	 pseudoloss: 13.170036
+epoch: 20	 task: 1 	 category: 77 	 loss: nan 	 posloss: 1123.940918 	 negloss: 0.000000 	 kldloss: 45.172379 	 maxloss: 0.000000 	 pseudoloss: 2.299901
+epoch: 30	 task: 1 	 category: 77 	 loss: nan 	 posloss: 878.429443 	 negloss: 0.000000 	 kldloss: 61.194496 	 maxloss: 0.000000 	 pseudoloss: 6.207592
+epoch: 40	 task: 1 	 category: 77 	 loss: 12.040000 	 posloss: 649.181152 	 negloss: 0.839587 	 kldloss: 69.764084 	 maxloss: 0.000000 	 pseudoloss: 5.182452
+epoch: 50	 task: 1 	 category: 77 	 loss: nan 	 posloss: 465.621582 	 negloss: 0.160453 	 kldloss: 74.582001 	 maxloss: 0.000000 	 pseudoloss: 3.789927
+epoch: 60	 task: 1 	 category: 77 	 loss: nan 	 posloss: 371.309387 	 negloss: 3.979296 	 kldloss: 69.014465 	 maxloss: 0.000000 	 pseudoloss: 3.216590
+epoch: 70	 task: 1 	 category: 77 	 loss: nan 	 posloss: 270.808472 	 negloss: 0.000000 	 kldloss: 70.769272 	 maxloss: 0.000000 	 pseudoloss: 1.463428
+epoch: 80	 task: 1 	 category: 77 	 loss: nan 	 posloss: 214.592453 	 negloss: 0.132705 	 kldloss: 70.068008 	 maxloss: 0.000000 	 pseudoloss: 0.020260
+epoch: 90	 task: 1 	 category: 77 	 loss: nan 	 posloss: 170.737640 	 negloss: 0.000000 	 kldloss: 62.951191 	 maxloss: 0.000000 	 pseudoloss: 0.484474
+epoch: 100	 task: 1 	 category: 77 	 loss: 3.051102 	 posloss: 121.082306 	 negloss: 1.002517 	 kldloss: 67.356651 	 maxloss: 0.000000 	 pseudoloss: 2.324305
+epoch: 10	 task: 1 	 category: 78 	 loss: 47.436494 	 posloss: 2173.317139 	 negloss: 0.000000 	 kldloss: 114.073517 	 maxloss: 0.000000 	 pseudoloss: 16.468336
+epoch: 20	 task: 1 	 category: 78 	 loss: nan 	 posloss: 1593.077026 	 negloss: 0.425868 	 kldloss: 110.703728 	 maxloss: 0.000000 	 pseudoloss: 14.655231
+epoch: 30	 task: 1 	 category: 78 	 loss: 23.275354 	 posloss: 1178.830933 	 negloss: 0.458729 	 kldloss: 111.471718 	 maxloss: 0.000000 	 pseudoloss: 9.026181
+epoch: 40	 task: 1 	 category: 78 	 loss: 18.184631 	 posloss: 965.170959 	 negloss: 1.299955 	 kldloss: 107.719910 	 maxloss: 0.000000 	 pseudoloss: 4.526474
+epoch: 50	 task: 1 	 category: 78 	 loss: nan 	 posloss: 896.052612 	 negloss: 4.093430 	 kldloss: 98.715584 	 maxloss: 0.000000 	 pseudoloss: 5.574568
+epoch: 60	 task: 1 	 category: 78 	 loss: 14.851222 	 posloss: 762.331787 	 negloss: 5.354598 	 kldloss: 100.037445 	 maxloss: 0.000000 	 pseudoloss: 4.767316
+epoch: 70	 task: 1 	 category: 78 	 loss: 11.972150 	 posloss: 628.920532 	 negloss: 3.125312 	 kldloss: 103.226433 	 maxloss: 0.000000 	 pseudoloss: 2.114586
+epoch: 80	 task: 1 	 category: 78 	 loss: nan 	 posloss: 525.762451 	 negloss: 9.233945 	 kldloss: 105.418526 	 maxloss: 0.000000 	 pseudoloss: 2.817805
+epoch: 90	 task: 1 	 category: 78 	 loss: 8.942082 	 posloss: 449.491028 	 negloss: 1.635355 	 kldloss: 100.369095 	 maxloss: 0.000000 	 pseudoloss: 2.060933
+epoch: 100	 task: 1 	 category: 78 	 loss: 7.916893 	 posloss: 384.360779 	 negloss: 6.199536 	 kldloss: 101.715157 	 maxloss: 0.000000 	 pseudoloss: 1.875276
+epoch: 10	 task: 1 	 category: 79 	 loss: 53.360262 	 posloss: 2353.245361 	 negloss: 0.160820 	 kldloss: 127.666176 	 maxloss: 0.000000 	 pseudoloss: 61.750374
+epoch: 20	 task: 1 	 category: 79 	 loss: 40.721948 	 posloss: 1957.819946 	 negloss: 4.742968 	 kldloss: 110.496071 	 maxloss: 0.000000 	 pseudoloss: 10.742260
+epoch: 30	 task: 1 	 category: 79 	 loss: 35.581591 	 posloss: 1699.705444 	 negloss: 6.789824 	 kldloss: 107.047508 	 maxloss: 0.000000 	 pseudoloss: 7.622094
+epoch: 40	 task: 1 	 category: 79 	 loss: 27.609125 	 posloss: 1412.986694 	 negloss: 2.942018 	 kldloss: 114.400368 	 maxloss: 0.000000 	 pseudoloss: 6.385275
+epoch: 50	 task: 1 	 category: 79 	 loss: nan 	 posloss: 1152.609009 	 negloss: 9.225327 	 kldloss: 121.533836 	 maxloss: 0.000000 	 pseudoloss: 10.944199
+epoch: 60	 task: 1 	 category: 79 	 loss: 17.944028 	 posloss: 934.869934 	 negloss: 13.282812 	 kldloss: 125.263573 	 maxloss: 0.000000 	 pseudoloss: 4.909545
+epoch: 70	 task: 1 	 category: 79 	 loss: 15.450127 	 posloss: 786.734741 	 negloss: 10.351370 	 kldloss: 122.294785 	 maxloss: 0.000000 	 pseudoloss: 4.400804
+epoch: 80	 task: 1 	 category: 79 	 loss: 13.034368 	 posloss: 690.976196 	 negloss: 4.048103 	 kldloss: 121.949425 	 maxloss: 0.000000 	 pseudoloss: 5.058976
+epoch: 90	 task: 1 	 category: 79 	 loss: 11.966963 	 posloss: 597.661926 	 negloss: 3.698363 	 kldloss: 121.168808 	 maxloss: 0.000000 	 pseudoloss: 2.544009
+epoch: 100	 task: 1 	 category: 79 	 loss: 10.006595 	 posloss: 493.605835 	 negloss: 0.790156 	 kldloss: 119.296638 	 maxloss: 0.000000 	 pseudoloss: 2.491960
+stage: 1
+cluster,task 0 : 0.6438571428571429
+cluster,task  1  : 0.316
+cluster,all novel : 0.316
+Training the autoencoder...
+Saving weights.
+Training VaDE...
+reset dataset with prev_categories [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
+==========	 task: 2	 categories: [80, 81, 82, 83, 84, 85, 86, 87, 88, 89] 	==========
+epoch: 10	 task: 2 	 category: 80 	 loss: 51.376043 	 posloss: 2251.240967 	 negloss: 0.000000 	 kldloss: 100.198914 	 maxloss: 927.111877 	 pseudoloss: 56.176792
+epoch: 20	 task: 2 	 category: 80 	 loss: 35.923907 	 posloss: 1710.709839 	 negloss: 0.838788 	 kldloss: 102.746346 	 maxloss: 507.084564 	 pseudoloss: 15.775551
+epoch: 30	 task: 2 	 category: 80 	 loss: 28.199910 	 posloss: 1307.532104 	 negloss: 11.076189 	 kldloss: 116.256653 	 maxloss: 218.133530 	 pseudoloss: 7.649189
+epoch: 40	 task: 2 	 category: 80 	 loss: 21.525489 	 posloss: 1114.944336 	 negloss: 11.214339 	 kldloss: 104.395630 	 maxloss: 122.658852 	 pseudoloss: 2.506996
+epoch: 50	 task: 2 	 category: 80 	 loss: 18.587596 	 posloss: 998.999146 	 negloss: 11.580981 	 kldloss: 101.511856 	 maxloss: 79.710037 	 pseudoloss: 7.913511
+epoch: 60	 task: 2 	 category: 80 	 loss: 15.497709 	 posloss: 832.309692 	 negloss: 7.365255 	 kldloss: 99.685806 	 maxloss: 41.173294 	 pseudoloss: 5.097956
+epoch: 70	 task: 2 	 category: 80 	 loss: 13.600877 	 posloss: 733.694031 	 negloss: 6.563875 	 kldloss: 100.052551 	 maxloss: 25.649069 	 pseudoloss: 4.114165
+epoch: 80	 task: 2 	 category: 80 	 loss: 12.174467 	 posloss: 647.400085 	 negloss: 3.149336 	 kldloss: 97.280556 	 maxloss: 14.808447 	 pseudoloss: 2.463755
+epoch: 90	 task: 2 	 category: 80 	 loss: 11.130233 	 posloss: 582.498474 	 negloss: 9.177725 	 kldloss: 103.184334 	 maxloss: 11.357963 	 pseudoloss: 3.879102
+epoch: 100	 task: 2 	 category: 80 	 loss: 9.678581 	 posloss: 497.989288 	 negloss: 5.616160 	 kldloss: 101.420807 	 maxloss: 6.094453 	 pseudoloss: 2.594089
+epoch: 10	 task: 2 	 category: 81 	 loss: 35.697891 	 posloss: 1737.624634 	 negloss: 0.226839 	 kldloss: 110.105560 	 maxloss: 387.038239 	 pseudoloss: 36.150154
+epoch: 20	 task: 2 	 category: 81 	 loss: 25.667652 	 posloss: 1339.215454 	 negloss: 4.320771 	 kldloss: 94.510498 	 maxloss: 186.743729 	 pseudoloss: 5.013565
+epoch: 30	 task: 2 	 category: 81 	 loss: 17.788284 	 posloss: 949.767517 	 negloss: 0.000000 	 kldloss: 99.858025 	 maxloss: 62.061359 	 pseudoloss: 3.801211
+epoch: 40	 task: 2 	 category: 81 	 loss: 14.955122 	 posloss: 812.816467 	 negloss: 1.473516 	 kldloss: 89.338676 	 maxloss: 38.071148 	 pseudoloss: 2.597790
+epoch: 50	 task: 2 	 category: 81 	 loss: 12.523913 	 posloss: 676.345947 	 negloss: 1.107141 	 kldloss: 93.100891 	 maxloss: 19.040245 	 pseudoloss: 3.698091
+epoch: 60	 task: 2 	 category: 81 	 loss: 10.190921 	 posloss: 536.206421 	 negloss: 2.820172 	 kldloss: 95.156883 	 maxloss: 8.995600 	 pseudoloss: 1.863017
+epoch: 70	 task: 2 	 category: 81 	 loss: 8.638974 	 posloss: 446.241272 	 negloss: 2.294532 	 kldloss: 95.516930 	 maxloss: 5.223444 	 pseudoloss: 3.633165
+epoch: 80	 task: 2 	 category: 81 	 loss: 7.295102 	 posloss: 364.007050 	 negloss: 5.877830 	 kldloss: 92.730309 	 maxloss: 2.320210 	 pseudoloss: 1.990219
+epoch: 90	 task: 2 	 category: 81 	 loss: 6.479697 	 posloss: 311.405029 	 negloss: 2.117965 	 kldloss: 93.560349 	 maxloss: 1.218105 	 pseudoloss: 0.443043
+epoch: 100	 task: 2 	 category: 81 	 loss: 5.815429 	 posloss: 275.908691 	 negloss: 3.158479 	 kldloss: 90.100250 	 maxloss: 0.802452 	 pseudoloss: 1.275069
+epoch: 10	 task: 2 	 category: 82 	 loss: 44.345128 	 posloss: 2085.437500 	 negloss: 1.065284 	 kldloss: 116.784813 	 maxloss: 545.696472 	 pseudoloss: 62.682953
+epoch: 20	 task: 2 	 category: 82 	 loss: 32.276689 	 posloss: 1671.805542 	 negloss: 1.316809 	 kldloss: 87.082230 	 maxloss: 279.100769 	 pseudoloss: 10.040773
+epoch: 30	 task: 2 	 category: 82 	 loss: 25.446314 	 posloss: 1345.286987 	 negloss: 0.973133 	 kldloss: 87.321053 	 maxloss: 139.659836 	 pseudoloss: 8.122927
+epoch: 40	 task: 2 	 category: 82 	 loss: 19.799386 	 posloss: 1062.894043 	 negloss: 9.190680 	 kldloss: 93.818314 	 maxloss: 61.658928 	 pseudoloss: 4.554425
+epoch: 50	 task: 2 	 category: 82 	 loss: 15.808607 	 posloss: 860.500977 	 negloss: 5.781122 	 kldloss: 98.398560 	 maxloss: 30.203978 	 pseudoloss: 3.359988
+epoch: 60	 task: 2 	 category: 82 	 loss: 13.445797 	 posloss: 712.835388 	 negloss: 8.435161 	 kldloss: 101.374939 	 maxloss: 18.505779 	 pseudoloss: 2.739479
+epoch: 70	 task: 2 	 category: 82 	 loss: 11.411972 	 posloss: 578.999756 	 negloss: 6.914737 	 kldloss: 102.099670 	 maxloss: 9.328065 	 pseudoloss: 4.529550
+epoch: 80	 task: 2 	 category: 82 	 loss: 9.258577 	 posloss: 484.145569 	 negloss: 0.945705 	 kldloss: 101.571800 	 maxloss: 6.153826 	 pseudoloss: 5.079868
+epoch: 90	 task: 2 	 category: 82 	 loss: 8.054812 	 posloss: 401.114380 	 negloss: 3.712770 	 kldloss: 102.486404 	 maxloss: 4.331311 	 pseudoloss: 1.939494
+epoch: 100	 task: 2 	 category: 82 	 loss: 6.998370 	 posloss: 332.582886 	 negloss: 1.425159 	 kldloss: 102.763580 	 maxloss: 2.330079 	 pseudoloss: 1.138481
+epoch: 10	 task: 2 	 category: 83 	 loss: 23.542897 	 posloss: 1275.582275 	 negloss: 0.000000 	 kldloss: 66.197144 	 maxloss: 137.118210 	 pseudoloss: 5.270657
+epoch: 20	 task: 2 	 category: 83 	 loss: 15.286938 	 posloss: 857.519287 	 negloss: 0.000000 	 kldloss: 68.365837 	 maxloss: 41.222607 	 pseudoloss: 0.751134
+epoch: 30	 task: 2 	 category: 83 	 loss: 9.600696 	 posloss: 521.811584 	 negloss: 0.833070 	 kldloss: 76.802689 	 maxloss: 7.798779 	 pseudoloss: 2.190619
+epoch: 40	 task: 2 	 category: 83 	 loss: 7.193747 	 posloss: 358.170898 	 negloss: 0.000000 	 kldloss: 74.687004 	 maxloss: 2.143422 	 pseudoloss: 0.402038
+epoch: 50	 task: 2 	 category: 83 	 loss: 5.017910 	 posloss: 235.095306 	 negloss: 1.206286 	 kldloss: 75.212975 	 maxloss: 0.592765 	 pseudoloss: 1.249257
+epoch: 60	 task: 2 	 category: 83 	 loss: 3.851773 	 posloss: 176.180176 	 negloss: 0.000000 	 kldloss: 70.300880 	 maxloss: 0.109962 	 pseudoloss: 0.000000
+epoch: 70	 task: 2 	 category: 83 	 loss: nan 	 posloss: 137.574966 	 negloss: 0.000000 	 kldloss: 66.341553 	 maxloss: 0.078815 	 pseudoloss: 0.286347
+epoch: 80	 task: 2 	 category: 83 	 loss: 2.730835 	 posloss: 102.116241 	 negloss: 1.425450 	 kldloss: 65.999451 	 maxloss: 0.021330 	 pseudoloss: 0.051824
+epoch: 90	 task: 2 	 category: 83 	 loss: 2.120800 	 posloss: 68.070229 	 negloss: 0.000000 	 kldloss: 66.655556 	 maxloss: 0.000000 	 pseudoloss: 0.000000
+epoch: 100	 task: 2 	 category: 83 	 loss: nan 	 posloss: 52.713440 	 negloss: 0.863869 	 kldloss: 60.426212 	 maxloss: 0.000000 	 pseudoloss: 0.000000
+epoch: 10	 task: 2 	 category: 84 	 loss: 55.673701 	 posloss: 2265.996826 	 negloss: 0.000000 	 kldloss: 147.121841 	 maxloss: 954.630371 	 pseudoloss: 119.204536
+epoch: 20	 task: 2 	 category: 84 	 loss: nan 	 posloss: 1600.790039 	 negloss: 2.343371 	 kldloss: 123.649506 	 maxloss: 370.670654 	 pseudoloss: 12.753528
+epoch: 30	 task: 2 	 category: 84 	 loss: 25.952150 	 posloss: 1338.276123 	 negloss: 5.505209 	 kldloss: 106.774719 	 maxloss: 211.676682 	 pseudoloss: 5.165852
+epoch: 40	 task: 2 	 category: 84 	 loss: 22.826469 	 posloss: 1201.988037 	 negloss: 2.151777 	 kldloss: 98.863533 	 maxloss: 145.663925 	 pseudoloss: 4.725883
+epoch: 50	 task: 2 	 category: 84 	 loss: nan 	 posloss: 1072.102173 	 negloss: 3.057320 	 kldloss: 99.829941 	 maxloss: 97.446770 	 pseudoloss: 3.749212
+epoch: 60	 task: 2 	 category: 84 	 loss: nan 	 posloss: 912.174683 	 negloss: 4.257083 	 kldloss: 102.880997 	 maxloss: 54.118069 	 pseudoloss: 5.720891
+epoch: 70	 task: 2 	 category: 84 	 loss: 14.254846 	 posloss: 793.656799 	 negloss: 0.540292 	 kldloss: 100.669304 	 maxloss: 32.385811 	 pseudoloss: 4.206082
+epoch: 80	 task: 2 	 category: 84 	 loss: 12.238712 	 posloss: 654.721924 	 negloss: 3.349090 	 kldloss: 104.615929 	 maxloss: 14.152389 	 pseudoloss: 3.665076
+epoch: 90	 task: 2 	 category: 84 	 loss: nan 	 posloss: 569.105713 	 negloss: 2.311363 	 kldloss: 106.982254 	 maxloss: 7.265801 	 pseudoloss: 6.061705
+epoch: 100	 task: 2 	 category: 84 	 loss: 9.089459 	 posloss: 478.113556 	 negloss: 0.623559 	 kldloss: 104.974823 	 maxloss: 3.848633 	 pseudoloss: 3.943262
+epoch: 10	 task: 2 	 category: 85 	 loss: 17.562599 	 posloss: 994.157227 	 negloss: 2.418617 	 kldloss: 85.300606 	 maxloss: 58.921284 	 pseudoloss: 0.050233
+epoch: 20	 task: 2 	 category: 85 	 loss: 11.427007 	 posloss: 669.105408 	 negloss: 2.346179 	 kldloss: 74.643433 	 maxloss: 15.880075 	 pseudoloss: 0.340109
+epoch: 30	 task: 2 	 category: 85 	 loss: 9.602773 	 posloss: 532.135681 	 negloss: 5.209583 	 kldloss: 67.119438 	 maxloss: 11.377981 	 pseudoloss: 0.496436
+epoch: 40	 task: 2 	 category: 85 	 loss: 7.534016 	 posloss: 393.271942 	 negloss: 6.694174 	 kldloss: 69.192139 	 maxloss: 4.150310 	 pseudoloss: 0.085841
+epoch: 50	 task: 2 	 category: 85 	 loss: 6.030229 	 posloss: 317.860199 	 negloss: 1.754070 	 kldloss: 66.858284 	 maxloss: 2.489874 	 pseudoloss: 0.000000
+epoch: 60	 task: 2 	 category: 85 	 loss: 5.442532 	 posloss: 264.192200 	 negloss: 9.128762 	 kldloss: 65.105156 	 maxloss: 0.991396 	 pseudoloss: 1.155596
+epoch: 70	 task: 2 	 category: 85 	 loss: 4.498963 	 posloss: 223.468582 	 negloss: 2.874618 	 kldloss: 62.060310 	 maxloss: 0.296070 	 pseudoloss: 0.243635
+epoch: 80	 task: 2 	 category: 85 	 loss: 3.851804 	 posloss: 188.018341 	 negloss: 1.611527 	 kldloss: 63.278801 	 maxloss: 0.089791 	 pseudoloss: 0.412251
+epoch: 90	 task: 2 	 category: 85 	 loss: 3.185953 	 posloss: 145.557297 	 negloss: 0.787715 	 kldloss: 62.761047 	 maxloss: 0.002864 	 pseudoloss: 0.087734
+epoch: 100	 task: 2 	 category: 85 	 loss: 3.121286 	 posloss: 114.596191 	 negloss: 1.264850 	 kldloss: 61.260910 	 maxloss: 0.000000 	 pseudoloss: 0.092531
+epoch: 10	 task: 2 	 category: 86 	 loss: 46.743008 	 posloss: 2097.115723 	 negloss: 0.000000 	 kldloss: 123.992958 	 maxloss: 753.794067 	 pseudoloss: 24.463633
+epoch: 20	 task: 2 	 category: 86 	 loss: 34.092529 	 posloss: 1620.778442 	 negloss: 5.614365 	 kldloss: 106.437943 	 maxloss: 399.593323 	 pseudoloss: 10.967073
+epoch: 30	 task: 2 	 category: 86 	 loss: 28.227996 	 posloss: 1432.993530 	 negloss: 6.948718 	 kldloss: 95.238472 	 maxloss: 289.461395 	 pseudoloss: 5.129041
+epoch: 40	 task: 2 	 category: 86 	 loss: 23.943839 	 posloss: 1189.883911 	 negloss: 8.341824 	 kldloss: 104.143784 	 maxloss: 165.033188 	 pseudoloss: 7.496195
+epoch: 50	 task: 2 	 category: 86 	 loss: 20.538000 	 posloss: 1045.162964 	 negloss: 5.325086 	 kldloss: 104.321701 	 maxloss: 113.254494 	 pseudoloss: 4.165168
+epoch: 60	 task: 2 	 category: 86 	 loss: 16.342858 	 posloss: 866.924683 	 negloss: 4.267863 	 kldloss: 106.735954 	 maxloss: 62.731331 	 pseudoloss: 4.018693
+epoch: 70	 task: 2 	 category: 86 	 loss: 14.843983 	 posloss: 758.836243 	 negloss: 8.384296 	 kldloss: 109.644218 	 maxloss: 36.214939 	 pseudoloss: 6.477502
+epoch: 80	 task: 2 	 category: 86 	 loss: 12.144752 	 posloss: 633.448547 	 negloss: 3.675228 	 kldloss: 106.987633 	 maxloss: 18.585291 	 pseudoloss: 3.599407
+epoch: 90	 task: 2 	 category: 86 	 loss: 10.342291 	 posloss: 528.368591 	 negloss: 3.697927 	 kldloss: 113.584862 	 maxloss: 9.713210 	 pseudoloss: 4.392437
+epoch: 100	 task: 2 	 category: 86 	 loss: 8.904923 	 posloss: 450.553772 	 negloss: 1.132162 	 kldloss: 109.927406 	 maxloss: 5.556106 	 pseudoloss: 3.682291
+epoch: 10	 task: 2 	 category: 87 	 loss: nan 	 posloss: 1553.488770 	 negloss: 0.698788 	 kldloss: 140.742172 	 maxloss: 304.174683 	 pseudoloss: 94.210526
+epoch: 20	 task: 2 	 category: 87 	 loss: nan 	 posloss: 1434.364624 	 negloss: 0.429321 	 kldloss: 81.880096 	 maxloss: 220.647354 	 pseudoloss: 10.445326
+epoch: 30	 task: 2 	 category: 87 	 loss: nan 	 posloss: 1163.845703 	 negloss: 0.000000 	 kldloss: 94.467392 	 maxloss: 122.915886 	 pseudoloss: 9.358159
+epoch: 40	 task: 2 	 category: 87 	 loss: nan 	 posloss: 924.395508 	 negloss: 0.811929 	 kldloss: 87.412636 	 maxloss: 57.742290 	 pseudoloss: 2.660680
+epoch: 50	 task: 2 	 category: 87 	 loss: 12.264235 	 posloss: 728.413208 	 negloss: 4.595604 	 kldloss: 92.673302 	 maxloss: 30.327137 	 pseudoloss: 2.078439
+epoch: 60	 task: 2 	 category: 87 	 loss: nan 	 posloss: 577.323425 	 negloss: 6.119782 	 kldloss: 92.585793 	 maxloss: 17.159166 	 pseudoloss: 3.831046
+epoch: 70	 task: 2 	 category: 87 	 loss: nan 	 posloss: 494.435852 	 negloss: 2.952207 	 kldloss: 92.737053 	 maxloss: 10.954305 	 pseudoloss: 9.091983
+epoch: 80	 task: 2 	 category: 87 	 loss: 7.491327 	 posloss: 389.078339 	 negloss: 3.450294 	 kldloss: 93.491386 	 maxloss: 8.837755 	 pseudoloss: 1.257635
+epoch: 90	 task: 2 	 category: 87 	 loss: nan 	 posloss: 331.941711 	 negloss: 6.299846 	 kldloss: 88.340462 	 maxloss: 3.396039 	 pseudoloss: 1.690069
+epoch: 100	 task: 2 	 category: 87 	 loss: nan 	 posloss: 277.851746 	 negloss: 1.432921 	 kldloss: 89.404594 	 maxloss: 2.156391 	 pseudoloss: 4.482655
+epoch: 10	 task: 2 	 category: 88 	 loss: 57.969429 	 posloss: 2468.317383 	 negloss: 0.000000 	 kldloss: 143.536285 	 maxloss: 924.442993 	 pseudoloss: 28.086199
+epoch: 20	 task: 2 	 category: 88 	 loss: 41.977901 	 posloss: 2056.201172 	 negloss: 0.000000 	 kldloss: 108.437119 	 maxloss: 617.237976 	 pseudoloss: 6.784208
+epoch: 30	 task: 2 	 category: 88 	 loss: 36.712928 	 posloss: 1769.261353 	 negloss: 0.504068 	 kldloss: 106.774406 	 maxloss: 449.135315 	 pseudoloss: 12.036501
+epoch: 40	 task: 2 	 category: 88 	 loss: 29.522696 	 posloss: 1496.806641 	 negloss: 0.215459 	 kldloss: 115.056709 	 maxloss: 286.237396 	 pseudoloss: 8.150406
+epoch: 50	 task: 2 	 category: 88 	 loss: 24.293468 	 posloss: 1242.597778 	 negloss: 0.803543 	 kldloss: 122.294403 	 maxloss: 162.389465 	 pseudoloss: 11.311215
+epoch: 60	 task: 2 	 category: 88 	 loss: 20.247969 	 posloss: 1092.532959 	 negloss: 0.499768 	 kldloss: 121.067474 	 maxloss: 104.819351 	 pseudoloss: 7.006771
+epoch: 70	 task: 2 	 category: 88 	 loss: 17.792452 	 posloss: 959.071655 	 negloss: 0.090335 	 kldloss: 118.949646 	 maxloss: 65.205589 	 pseudoloss: 5.675374
+epoch: 80	 task: 2 	 category: 88 	 loss: 15.851635 	 posloss: 829.094482 	 negloss: 1.134711 	 kldloss: 120.997528 	 maxloss: 38.802319 	 pseudoloss: 4.879630
+epoch: 90	 task: 2 	 category: 88 	 loss: 13.371835 	 posloss: 730.509644 	 negloss: 2.205905 	 kldloss: 117.233810 	 maxloss: 22.829838 	 pseudoloss: 3.482314
+epoch: 100	 task: 2 	 category: 88 	 loss: nan 	 posloss: 619.631042 	 negloss: 8.638318 	 kldloss: 122.291763 	 maxloss: 12.423844 	 pseudoloss: 6.764349
+epoch: 10	 task: 2 	 category: 89 	 loss: 45.978911 	 posloss: 2041.899414 	 negloss: 0.088424 	 kldloss: 122.341171 	 maxloss: 709.642456 	 pseudoloss: 59.579350
+epoch: 20	 task: 2 	 category: 89 	 loss: 36.230210 	 posloss: 1728.465088 	 negloss: 0.377267 	 kldloss: 98.182426 	 maxloss: 481.619904 	 pseudoloss: 13.110263
+epoch: 30	 task: 2 	 category: 89 	 loss: 29.077550 	 posloss: 1425.285522 	 negloss: 0.909013 	 kldloss: 97.118683 	 maxloss: 292.930054 	 pseudoloss: 9.076126
+epoch: 40	 task: 2 	 category: 89 	 loss: 23.589209 	 posloss: 1199.794312 	 negloss: 1.088985 	 kldloss: 102.598351 	 maxloss: 176.924973 	 pseudoloss: 6.687741
+epoch: 50	 task: 2 	 category: 89 	 loss: 20.300582 	 posloss: 1061.488159 	 negloss: 1.211345 	 kldloss: 100.094902 	 maxloss: 115.943665 	 pseudoloss: 4.457179
+epoch: 60	 task: 2 	 category: 89 	 loss: 17.995629 	 posloss: 937.899597 	 negloss: 5.925039 	 kldloss: 103.171707 	 maxloss: 77.221970 	 pseudoloss: 11.665673
+epoch: 70	 task: 2 	 category: 89 	 loss: 14.724955 	 posloss: 771.776428 	 negloss: 5.639173 	 kldloss: 110.600311 	 maxloss: 36.590736 	 pseudoloss: 5.240119
+epoch: 80	 task: 2 	 category: 89 	 loss: 12.748352 	 posloss: 657.395996 	 negloss: 7.810159 	 kldloss: 108.878151 	 maxloss: 19.941517 	 pseudoloss: 3.601857
+epoch: 90	 task: 2 	 category: 89 	 loss: 10.973935 	 posloss: 569.325317 	 negloss: 4.508594 	 kldloss: 108.522316 	 maxloss: 10.682121 	 pseudoloss: 4.276758
+epoch: 100	 task: 2 	 category: 89 	 loss: 9.516849 	 posloss: 483.047211 	 negloss: 1.689569 	 kldloss: 108.389397 	 maxloss: 5.952130 	 pseudoloss: 4.096814
+stage: 2
+cluster,task 0 : 0.625
+cluster,task  1  : 0.279
+cluster,task  2  : 0.39
+cluster,all novel : 0.3345
+Training the autoencoder...
+Saving weights.
+Training VaDE...
+reset dataset with prev_categories [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
+==========	 task: 3	 categories: [90, 91, 92, 93, 94, 95, 96, 97, 98, 99] 	==========
+epoch: 10	 task: 3 	 category: 90 	 loss: 64.145414 	 posloss: 2539.141602 	 negloss: 0.000000 	 kldloss: 164.242233 	 maxloss: 1264.135010 	 pseudoloss: 50.525108
+epoch: 20	 task: 3 	 category: 90 	 loss: 50.200219 	 posloss: 2146.160645 	 negloss: 0.000000 	 kldloss: 136.675705 	 maxloss: 841.061890 	 pseudoloss: 17.120409
+epoch: 30	 task: 3 	 category: 90 	 loss: 38.644739 	 posloss: 1745.179199 	 negloss: 0.000000 	 kldloss: 145.805771 	 maxloss: 464.472778 	 pseudoloss: 9.252891
+epoch: 40	 task: 3 	 category: 90 	 loss: 30.918661 	 posloss: 1510.872925 	 negloss: 0.335564 	 kldloss: 142.458420 	 maxloss: 298.430969 	 pseudoloss: 6.661672
+epoch: 50	 task: 3 	 category: 90 	 loss: 25.515034 	 posloss: 1257.346069 	 negloss: 8.445550 	 kldloss: 151.810638 	 maxloss: 154.998093 	 pseudoloss: 9.084326
+epoch: 60	 task: 3 	 category: 90 	 loss: 20.602883 	 posloss: 1022.677063 	 negloss: 10.109900 	 kldloss: 153.096008 	 maxloss: 69.207565 	 pseudoloss: 6.790594
+epoch: 70	 task: 3 	 category: 90 	 loss: 17.627675 	 posloss: 886.216858 	 negloss: 7.738048 	 kldloss: 148.073761 	 maxloss: 40.291901 	 pseudoloss: 3.591448
+epoch: 80	 task: 3 	 category: 90 	 loss: 15.574444 	 posloss: 803.570740 	 negloss: 4.475868 	 kldloss: 143.383118 	 maxloss: 26.888273 	 pseudoloss: 6.053978
+epoch: 90	 task: 3 	 category: 90 	 loss: nan 	 posloss: 693.865051 	 negloss: 4.523480 	 kldloss: 141.800919 	 maxloss: 14.534498 	 pseudoloss: 3.767745
+epoch: 100	 task: 3 	 category: 90 	 loss: 12.244812 	 posloss: 602.297913 	 negloss: 6.364331 	 kldloss: 138.097290 	 maxloss: 8.950399 	 pseudoloss: 3.113631
+epoch: 10	 task: 3 	 category: 91 	 loss: nan 	 posloss: 1812.328369 	 negloss: 0.000000 	 kldloss: 149.924561 	 maxloss: 606.653381 	 pseudoloss: 81.027885
+epoch: 20	 task: 3 	 category: 91 	 loss: 31.829554 	 posloss: 1571.034668 	 negloss: 0.000000 	 kldloss: 100.901436 	 maxloss: 422.297455 	 pseudoloss: 9.159022
+epoch: 30	 task: 3 	 category: 91 	 loss: nan 	 posloss: 1323.715820 	 negloss: 0.000000 	 kldloss: 93.236618 	 maxloss: 264.405426 	 pseudoloss: 5.409243
+epoch: 40	 task: 3 	 category: 91 	 loss: nan 	 posloss: 1112.187256 	 negloss: 0.000000 	 kldloss: 103.284645 	 maxloss: 151.303207 	 pseudoloss: 10.754203
+epoch: 50	 task: 3 	 category: 91 	 loss: nan 	 posloss: 905.604553 	 negloss: 0.000000 	 kldloss: 111.823204 	 maxloss: 70.050560 	 pseudoloss: 5.624242
+epoch: 60	 task: 3 	 category: 91 	 loss: nan 	 posloss: 785.357117 	 negloss: 0.000000 	 kldloss: 103.423714 	 maxloss: 40.365482 	 pseudoloss: 7.926800
+epoch: 70	 task: 3 	 category: 91 	 loss: 12.156218 	 posloss: 639.632568 	 negloss: 0.904404 	 kldloss: 106.179512 	 maxloss: 17.575331 	 pseudoloss: 3.593498
+epoch: 80	 task: 3 	 category: 91 	 loss: nan 	 posloss: 582.992371 	 negloss: 1.511166 	 kldloss: 112.345055 	 maxloss: 39.519943 	 pseudoloss: 15.391572
+epoch: 90	 task: 3 	 category: 91 	 loss: 8.964000 	 posloss: 459.857086 	 negloss: 0.000000 	 kldloss: 109.278099 	 maxloss: 5.662299 	 pseudoloss: 3.135841
+epoch: 100	 task: 3 	 category: 91 	 loss: nan 	 posloss: 377.005463 	 negloss: 1.137657 	 kldloss: 100.955078 	 maxloss: 3.403475 	 pseudoloss: 0.954450
+epoch: 10	 task: 3 	 category: 92 	 loss: nan 	 posloss: 1632.767944 	 negloss: 1.592073 	 kldloss: 91.019058 	 maxloss: 457.522064 	 pseudoloss: 313.679718
+epoch: 20	 task: 3 	 category: 92 	 loss: nan 	 posloss: 1303.087524 	 negloss: 0.000000 	 kldloss: 61.657444 	 maxloss: 272.446320 	 pseudoloss: 15.733864
+epoch: 30	 task: 3 	 category: 92 	 loss: nan 	 posloss: 1217.911377 	 negloss: 2.697438 	 kldloss: 56.927582 	 maxloss: 234.017670 	 pseudoloss: 4.963413
+epoch: 40	 task: 3 	 category: 92 	 loss: nan 	 posloss: 1098.644043 	 negloss: 1.860440 	 kldloss: 56.630707 	 maxloss: 186.529556 	 pseudoloss: 13.304420
+epoch: 50	 task: 3 	 category: 92 	 loss: 16.088849 	 posloss: 813.247986 	 negloss: 0.000000 	 kldloss: 76.371086 	 maxloss: 88.938904 	 pseudoloss: 8.717876
+epoch: 60	 task: 3 	 category: 92 	 loss: nan 	 posloss: 690.554993 	 negloss: 0.000000 	 kldloss: 73.761780 	 maxloss: 59.619640 	 pseudoloss: 4.149343
+epoch: 70	 task: 3 	 category: 92 	 loss: nan 	 posloss: 617.350586 	 negloss: 0.000000 	 kldloss: 69.970451 	 maxloss: 49.032585 	 pseudoloss: 6.987459
+epoch: 80	 task: 3 	 category: 92 	 loss: nan 	 posloss: 548.761169 	 negloss: 0.372597 	 kldloss: 70.993240 	 maxloss: 29.278807 	 pseudoloss: 1.988640
+epoch: 90	 task: 3 	 category: 92 	 loss: 10.230941 	 posloss: 515.209534 	 negloss: 0.000000 	 kldloss: 66.258804 	 maxloss: 25.360720 	 pseudoloss: 3.022725
+epoch: 100	 task: 3 	 category: 92 	 loss: nan 	 posloss: 476.682953 	 negloss: 2.446319 	 kldloss: 66.094330 	 maxloss: 20.100777 	 pseudoloss: 5.883881
+epoch: 10	 task: 3 	 category: 93 	 loss: nan 	 posloss: 2252.672119 	 negloss: 0.000000 	 kldloss: 132.182510 	 maxloss: 869.724731 	 pseudoloss: 214.020859
+epoch: 20	 task: 3 	 category: 93 	 loss: 39.566143 	 posloss: 1876.259888 	 negloss: 0.817841 	 kldloss: 98.935349 	 maxloss: 551.856628 	 pseudoloss: 14.615507
+epoch: 30	 task: 3 	 category: 93 	 loss: nan 	 posloss: 1500.400513 	 negloss: 0.000000 	 kldloss: 104.986832 	 maxloss: 302.328400 	 pseudoloss: 11.494267
+epoch: 40	 task: 3 	 category: 93 	 loss: 23.101377 	 posloss: 1194.187256 	 negloss: 1.203318 	 kldloss: 109.607407 	 maxloss: 165.271179 	 pseudoloss: 6.678162
+epoch: 50	 task: 3 	 category: 93 	 loss: 19.128423 	 posloss: 984.467712 	 negloss: 0.631163 	 kldloss: 109.517769 	 maxloss: 82.476547 	 pseudoloss: 6.500782
+epoch: 60	 task: 3 	 category: 93 	 loss: 16.197096 	 posloss: 857.181274 	 negloss: 0.000000 	 kldloss: 107.370926 	 maxloss: 51.833252 	 pseudoloss: 5.716475
+epoch: 70	 task: 3 	 category: 93 	 loss: 13.466219 	 posloss: 692.177612 	 negloss: 2.455906 	 kldloss: 111.814133 	 maxloss: 20.295460 	 pseudoloss: 2.601548
+epoch: 80	 task: 3 	 category: 93 	 loss: 11.559214 	 posloss: 589.991089 	 negloss: 2.740578 	 kldloss: 110.854134 	 maxloss: 10.761740 	 pseudoloss: 7.101074
+epoch: 90	 task: 3 	 category: 93 	 loss: 9.764867 	 posloss: 489.968292 	 negloss: 0.010675 	 kldloss: 109.161751 	 maxloss: 4.545392 	 pseudoloss: 3.688195
+epoch: 100	 task: 3 	 category: 93 	 loss: nan 	 posloss: 410.849091 	 negloss: 0.581007 	 kldloss: 109.294800 	 maxloss: 2.530781 	 pseudoloss: 3.521389
+epoch: 10	 task: 3 	 category: 94 	 loss: 50.747471 	 posloss: 1848.836304 	 negloss: 0.000000 	 kldloss: 134.064468 	 maxloss: 630.191772 	 pseudoloss: 546.689758
+epoch: 20	 task: 3 	 category: 94 	 loss: 36.120181 	 posloss: 1606.054932 	 negloss: 0.018854 	 kldloss: 85.495178 	 maxloss: 435.110077 	 pseudoloss: 15.600732
+epoch: 30	 task: 3 	 category: 94 	 loss: 27.742525 	 posloss: 1317.222412 	 negloss: 0.000000 	 kldloss: 92.972702 	 maxloss: 252.992096 	 pseudoloss: 6.975409
+epoch: 40	 task: 3 	 category: 94 	 loss: 23.652049 	 posloss: 1177.869263 	 negloss: 1.500371 	 kldloss: 88.841331 	 maxloss: 172.936737 	 pseudoloss: 5.231536
+epoch: 50	 task: 3 	 category: 94 	 loss: 19.704570 	 posloss: 1013.913574 	 negloss: 0.000000 	 kldloss: 93.831879 	 maxloss: 105.112526 	 pseudoloss: 5.644724
+epoch: 60	 task: 3 	 category: 94 	 loss: 17.210395 	 posloss: 882.831665 	 negloss: 0.000000 	 kldloss: 99.221710 	 maxloss: 65.598755 	 pseudoloss: 11.082336
+epoch: 70	 task: 3 	 category: 94 	 loss: 14.191262 	 posloss: 771.714355 	 negloss: 0.674157 	 kldloss: 98.355721 	 maxloss: 36.618313 	 pseudoloss: 1.908104
+epoch: 80	 task: 3 	 category: 94 	 loss: 12.809021 	 posloss: 682.462891 	 negloss: 0.836686 	 kldloss: 101.339371 	 maxloss: 24.216822 	 pseudoloss: 4.733621
+epoch: 90	 task: 3 	 category: 94 	 loss: 10.958225 	 posloss: 564.484619 	 negloss: 0.380974 	 kldloss: 101.523132 	 maxloss: 11.704957 	 pseudoloss: 5.558937
+epoch: 100	 task: 3 	 category: 94 	 loss: nan 	 posloss: 477.484619 	 negloss: 0.719856 	 kldloss: 106.561012 	 maxloss: 6.298292 	 pseudoloss: 4.053401
+epoch: 10	 task: 3 	 category: 95 	 loss: nan 	 posloss: 1789.099609 	 negloss: 0.000000 	 kldloss: 174.761261 	 maxloss: 469.798187 	 pseudoloss: 387.380219
+epoch: 20	 task: 3 	 category: 95 	 loss: nan 	 posloss: 1554.654053 	 negloss: 0.000000 	 kldloss: 99.217529 	 maxloss: 293.227509 	 pseudoloss: 52.959499
+epoch: 30	 task: 3 	 category: 95 	 loss: nan 	 posloss: 1257.760864 	 negloss: 0.000000 	 kldloss: 92.363892 	 maxloss: 177.218719 	 pseudoloss: 12.190489
+epoch: 40	 task: 3 	 category: 95 	 loss: 21.123275 	 posloss: 1106.613159 	 negloss: 0.000000 	 kldloss: 84.046471 	 maxloss: 123.611458 	 pseudoloss: 8.274909
+epoch: 50	 task: 3 	 category: 95 	 loss: nan 	 posloss: 874.279053 	 negloss: 0.000000 	 kldloss: 90.050133 	 maxloss: 65.467072 	 pseudoloss: 2.709084
+epoch: 60	 task: 3 	 category: 95 	 loss: 15.394347 	 posloss: 803.307617 	 negloss: 0.000000 	 kldloss: 92.572075 	 maxloss: 58.774944 	 pseudoloss: 21.041550
+epoch: 70	 task: 3 	 category: 95 	 loss: nan 	 posloss: 657.390137 	 negloss: 0.000000 	 kldloss: 91.331322 	 maxloss: 23.624601 	 pseudoloss: 6.773376
+epoch: 80	 task: 3 	 category: 95 	 loss: 10.649928 	 posloss: 547.871399 	 negloss: 0.000000 	 kldloss: 93.575134 	 maxloss: 12.271896 	 pseudoloss: 4.039587
+epoch: 90	 task: 3 	 category: 95 	 loss: nan 	 posloss: 475.350769 	 negloss: 0.000000 	 kldloss: 90.131004 	 maxloss: 6.453707 	 pseudoloss: 4.689955
+epoch: 100	 task: 3 	 category: 95 	 loss: 8.360556 	 posloss: 421.978455 	 negloss: 0.000000 	 kldloss: 89.452271 	 maxloss: 4.796671 	 pseudoloss: 1.624960
+epoch: 10	 task: 3 	 category: 96 	 loss: 60.913324 	 posloss: 2416.260498 	 negloss: 0.000000 	 kldloss: 103.277206 	 maxloss: 1027.265259 	 pseudoloss: 210.725449
+epoch: 20	 task: 3 	 category: 96 	 loss: nan 	 posloss: 1869.235352 	 negloss: 0.000000 	 kldloss: 105.442101 	 maxloss: 531.101746 	 pseudoloss: 16.035515
+epoch: 30	 task: 3 	 category: 96 	 loss: 28.467053 	 posloss: 1403.802368 	 negloss: 2.609621 	 kldloss: 119.618805 	 maxloss: 226.482498 	 pseudoloss: 9.486764
+epoch: 40	 task: 3 	 category: 96 	 loss: 24.165314 	 posloss: 1225.776123 	 negloss: 0.461619 	 kldloss: 107.002289 	 maxloss: 152.999100 	 pseudoloss: 7.591500
+epoch: 50	 task: 3 	 category: 96 	 loss: 21.632470 	 posloss: 1107.511841 	 negloss: 2.187023 	 kldloss: 102.011658 	 maxloss: 108.893547 	 pseudoloss: 5.641505
+epoch: 60	 task: 3 	 category: 96 	 loss: 17.303461 	 posloss: 893.980103 	 negloss: 3.591532 	 kldloss: 116.849350 	 maxloss: 52.517056 	 pseudoloss: 4.500389
+epoch: 70	 task: 3 	 category: 96 	 loss: 13.429734 	 posloss: 705.776123 	 negloss: 1.678712 	 kldloss: 118.202194 	 maxloss: 22.751656 	 pseudoloss: 6.312854
+epoch: 80	 task: 3 	 category: 96 	 loss: 11.972191 	 posloss: 610.533386 	 negloss: 2.451072 	 kldloss: 114.413940 	 maxloss: 14.003356 	 pseudoloss: 1.957645
+epoch: 90	 task: 3 	 category: 96 	 loss: nan 	 posloss: 524.954773 	 negloss: 0.907535 	 kldloss: 117.279533 	 maxloss: 7.844428 	 pseudoloss: 4.140142
+epoch: 100	 task: 3 	 category: 96 	 loss: 9.592850 	 posloss: 448.599243 	 negloss: 2.244087 	 kldloss: 115.204163 	 maxloss: 5.588988 	 pseudoloss: 3.072529
+epoch: 10	 task: 3 	 category: 97 	 loss: nan 	 posloss: 2043.922363 	 negloss: 0.000000 	 kldloss: 143.680649 	 maxloss: 648.970215 	 pseudoloss: 194.007324
+epoch: 20	 task: 3 	 category: 97 	 loss: 31.868056 	 posloss: 1474.884277 	 negloss: 0.000000 	 kldloss: 126.886383 	 maxloss: 283.399597 	 pseudoloss: 18.972509
+epoch: 30	 task: 3 	 category: 97 	 loss: 24.732153 	 posloss: 1236.922363 	 negloss: 0.000000 	 kldloss: 115.308990 	 maxloss: 146.574829 	 pseudoloss: 12.881182
+epoch: 40	 task: 3 	 category: 97 	 loss: 19.906110 	 posloss: 1013.547119 	 negloss: 0.000000 	 kldloss: 113.307327 	 maxloss: 67.604317 	 pseudoloss: 7.165922
+epoch: 50	 task: 3 	 category: 97 	 loss: 16.910799 	 posloss: 917.278076 	 negloss: 0.483720 	 kldloss: 103.512955 	 maxloss: 44.553730 	 pseudoloss: 3.382812
+epoch: 60	 task: 3 	 category: 97 	 loss: nan 	 posloss: 812.288147 	 negloss: 1.966980 	 kldloss: 101.922485 	 maxloss: 27.278746 	 pseudoloss: 4.932899
+epoch: 70	 task: 3 	 category: 97 	 loss: 12.845254 	 posloss: 678.422729 	 negloss: 1.127575 	 kldloss: 107.659004 	 maxloss: 13.628793 	 pseudoloss: 2.220648
+epoch: 80	 task: 3 	 category: 97 	 loss: 11.470503 	 posloss: 568.194031 	 negloss: 1.151568 	 kldloss: 111.042084 	 maxloss: 6.574024 	 pseudoloss: 10.226114
+epoch: 90	 task: 3 	 category: 97 	 loss: 9.525606 	 posloss: 479.382080 	 negloss: 0.944104 	 kldloss: 108.293266 	 maxloss: 3.174671 	 pseudoloss: 2.182098
+epoch: 100	 task: 3 	 category: 97 	 loss: 8.769615 	 posloss: 428.660217 	 negloss: 0.998299 	 kldloss: 104.331833 	 maxloss: 2.328382 	 pseudoloss: 5.286022
+epoch: 10	 task: 3 	 category: 98 	 loss: 46.081536 	 posloss: 2030.087891 	 negloss: 3.799623 	 kldloss: 141.097198 	 maxloss: 610.044250 	 pseudoloss: 87.140312
+epoch: 20	 task: 3 	 category: 98 	 loss: nan 	 posloss: 1887.985840 	 negloss: 1.295672 	 kldloss: 88.647736 	 maxloss: 515.607483 	 pseudoloss: 14.104026
+epoch: 30	 task: 3 	 category: 98 	 loss: nan 	 posloss: 1761.706299 	 negloss: 0.000000 	 kldloss: 81.956108 	 maxloss: 426.166931 	 pseudoloss: 5.918928
+epoch: 40	 task: 3 	 category: 98 	 loss: 28.185739 	 posloss: 1459.693970 	 negloss: 0.374998 	 kldloss: 94.679565 	 maxloss: 250.023331 	 pseudoloss: 5.813335
+epoch: 50	 task: 3 	 category: 98 	 loss: 24.559499 	 posloss: 1281.223389 	 negloss: 2.007021 	 kldloss: 100.727554 	 maxloss: 162.889725 	 pseudoloss: 3.731424
+epoch: 60	 task: 3 	 category: 98 	 loss: 21.125584 	 posloss: 1127.880005 	 negloss: 0.633597 	 kldloss: 100.290222 	 maxloss: 107.454193 	 pseudoloss: 5.080127
+epoch: 70	 task: 3 	 category: 98 	 loss: nan 	 posloss: 988.164307 	 negloss: 0.000000 	 kldloss: 101.832664 	 maxloss: 66.417770 	 pseudoloss: 4.680636
+epoch: 80	 task: 3 	 category: 98 	 loss: 16.296552 	 posloss: 882.855164 	 negloss: 1.022109 	 kldloss: 105.326500 	 maxloss: 42.872990 	 pseudoloss: 4.843763
+epoch: 90	 task: 3 	 category: 98 	 loss: nan 	 posloss: 757.012207 	 negloss: 0.000000 	 kldloss: 108.179092 	 maxloss: 21.934729 	 pseudoloss: 2.142167
+epoch: 100	 task: 3 	 category: 98 	 loss: 12.705697 	 posloss: 652.296997 	 negloss: 1.800506 	 kldloss: 114.109894 	 maxloss: 12.489674 	 pseudoloss: 4.625448
+epoch: 10	 task: 3 	 category: 99 	 loss: 61.673305 	 posloss: 2472.723877 	 negloss: 0.000000 	 kldloss: 146.774765 	 maxloss: 944.746094 	 pseudoloss: 223.142975
+epoch: 20	 task: 3 	 category: 99 	 loss: nan 	 posloss: 1956.719727 	 negloss: 0.000000 	 kldloss: 112.381004 	 maxloss: 507.027618 	 pseudoloss: 17.889866
+epoch: 30	 task: 3 	 category: 99 	 loss: nan 	 posloss: 1700.491089 	 negloss: 0.000000 	 kldloss: 102.379593 	 maxloss: 344.616333 	 pseudoloss: 10.631201
+epoch: 40	 task: 3 	 category: 99 	 loss: nan 	 posloss: 1406.252075 	 negloss: 0.000000 	 kldloss: 118.068077 	 maxloss: 197.480057 	 pseudoloss: 9.617239
+epoch: 50	 task: 3 	 category: 99 	 loss: nan 	 posloss: 1153.936890 	 negloss: 0.000000 	 kldloss: 121.650520 	 maxloss: 103.753006 	 pseudoloss: 5.679764
+epoch: 60	 task: 3 	 category: 99 	 loss: 18.541341 	 posloss: 1005.840820 	 negloss: 0.000000 	 kldloss: 119.852570 	 maxloss: 70.395180 	 pseudoloss: 10.096289
+epoch: 70	 task: 3 	 category: 99 	 loss: 17.164101 	 posloss: 860.679504 	 negloss: 0.000000 	 kldloss: 116.708191 	 maxloss: 43.406918 	 pseudoloss: 2.475904
+epoch: 80	 task: 3 	 category: 99 	 loss: 14.619259 	 posloss: 762.931763 	 negloss: 0.000000 	 kldloss: 119.349144 	 maxloss: 26.942713 	 pseudoloss: 6.701136
+epoch: 90	 task: 3 	 category: 99 	 loss: nan 	 posloss: 652.258484 	 negloss: 0.561678 	 kldloss: 114.412041 	 maxloss: 14.985313 	 pseudoloss: 5.983252
+epoch: 100	 task: 3 	 category: 99 	 loss: 11.255243 	 posloss: 554.117493 	 negloss: 0.000000 	 kldloss: 115.469032 	 maxloss: 7.043964 	 pseudoloss: 2.725407
+stage: 3
+cluster,task 0 : 0.6085714285714285
+cluster,task  1  : 0.265
+cluster,task  2  : 0.381
+cluster,task  3  : 0.376
+cluster,all novel : 0.3406666666666667

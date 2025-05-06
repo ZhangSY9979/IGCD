@@ -1,6 +1,6 @@
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = '0'
+os.environ["CUDA_VISIBLE_DEVICES"] = '4'
 
 from utils.args import get_args
 from utils.training import train_il
@@ -12,7 +12,7 @@ def main():
     args = get_args()
 
     args.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    args.featureNet = 'resnet18'
+    args.featureNet = None
 
     args.dataset = 'seq-tinyimg'
     args.lr = 5e-5
@@ -23,16 +23,17 @@ def main():
     args.pretrain_epochs = 100
     args.VaDE_epochs = 30
     args.root1 = "data/"
-    args.root = "/media/zhangsiyu/data/"
-    # args.lr_new = 5e-5
+    args.root = "/home/zhangsiyu/data/"
+    args.extra_name = "resenet_tiny"
 
     args.ratio_first = 0
-    args.ratio = 1  # 控制应该有多少分类器认定为异常则分为新类
-    args.num = 0  # 务必改回来！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-    args.ratio_bate = 0.3  # 选取所有样本的分数值中，百分之多少之后为异常.3指前70%都是正常的
-    args.lambda1 = 10
+    args.ratio = 1
+    args.num = 0
+    args.ratio_bate = 0.3
+    args.lambda1 = 1
     args.lambda2 = 20
-    # args.bate = 0.0011
+    args.lambda3 = 20
+    args.lambda4 = 10
     args.prato = 0
     args.kld_ratio = 0.5
     args.eps = 1
@@ -61,11 +62,11 @@ def main():
             (list(range(160, 180)), (0.9, 1.0), '80-90'),
             (list(range(180, 200)), (0, 1.0), '90-100'),),
     }
-    args.model = 'gcdvaetiny'
-    if args.seed is not None:
-        set_random_seed(args.seed)
+    args.model = 'tinyimagenet'
+    # if args.seed is not None:
+    #     set_random_seed(args.seed)
 
-    for conf in [45,12,1993]:  # 下面应该调整一下r_intar,感觉影响大，异常检测能力很弱，这是为啥呢
+    for conf in [42, 1993,0]:  # 下面应该调整一下r_intar,感觉影响大，异常检测能力很弱，这是为啥呢
         print("")
         print("=================================================================")
         print("==========================", args.dataset, "nt:", conf, "==========================")
@@ -74,9 +75,7 @@ def main():
         args.seed = conf
         if args.seed is not None:
             set_random_seed(args.seed)
-        # args.r_intra = conf
-        # args.p = conf
-        # args.lambda2 = 0
+        args.featureNet = None
         train_il(args)
 
 

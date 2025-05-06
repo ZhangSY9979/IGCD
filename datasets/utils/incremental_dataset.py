@@ -122,9 +122,9 @@ def store_masked_loaders(train_dataset: datasets, test_dataset: datasets,
         test_dataset.targets = np.array(test_dataset.targets)[test_mask]
 
     train_loader = DataLoader(train_dataset,
-                              batch_size=setting.args.batch_size, shuffle=True, num_workers=8)
+                              batch_size=setting.args.batch_size, shuffle=True, num_workers=0)
     test_loader = DataLoader(test_dataset,
-                             batch_size=setting.args.batch_size, shuffle=False, num_workers=8)
+                             batch_size=setting.args.batch_size, shuffle=False, num_workers=0)
     setting.test_loaders.append(test_loader)
     setting.train_loader = train_loader
 
@@ -240,8 +240,8 @@ def getfeature_loader(train_dataset: datasets, test_dataset: datasets, setting: 
     if setting.args.featureNet:
         my_file = Path(
             setting.args.root + "/" + setting.args.dataset + "-" + setting.args.featureNet + "-train-data.npy")
-        if my_file.exists():
-            print("feature already extracted")
+        if my_file.exists() and setting.i != 0:
+            # print("feature already extracted")
             train_data = np.load(
                 setting.args.root + "/" + setting.args.dataset + "-" + setting.args.featureNet + "-train-data.npy",
                 allow_pickle=True)
@@ -255,7 +255,7 @@ def getfeature_loader(train_dataset: datasets, test_dataset: datasets, setting: 
                 setting.args.root + "/" + setting.args.dataset + "-" + setting.args.featureNet + "-test-label.npy",
                 allow_pickle=True)
         else:
-            print("feature file not found !!  extracting feature ...")
+            # print("feature file not found !!  extracting feature ...")
             train_data, train_label = get_feature_by_extractor(train_dataset, setting.extractor, setting)
             test_data, test_label = get_feature_by_extractor(test_dataset, setting.extractor, setting)
 
@@ -267,11 +267,12 @@ def getfeature_loader(train_dataset: datasets, test_dataset: datasets, setting: 
                     test_data, allow_pickle=True)
             np.save(setting.args.root + "/" + setting.args.dataset + "-" + setting.args.featureNet + "-test-label.npy",
                     test_label, allow_pickle=True)
-
-        # train_dataset = ILDataset(train_data, train_label,transform=train_transforms)
-        # test_dataset = ILDataset(test_data, test_label,transform=test_transforms)
-        train_dataset = ILDataset(train_data, train_label)
-        test_dataset = ILDataset(test_data, test_label)
+        if setting.args.featureNet:
+            train_dataset = ILDataset(train_data, train_label)
+            test_dataset = ILDataset(test_data, test_label)
+        else:
+            train_dataset = ILDataset(train_data, train_label)
+            test_dataset = ILDataset(test_data, test_label)
 
     train, test = store_masked_loaders(train_dataset, test_dataset, setting=setting)
 

@@ -1,27 +1,50 @@
-
-from torchvision.datasets import CIFAR100
+import numpy as np
+from torch.utils.data import DataLoader, Dataset
 import torchvision.transforms as transforms
 import torchvision.models as models
 from PIL import Image
 from datasets.utils.validation import get_train_val
 from datasets.utils.incremental_dataset import getfeature_loader, IncrementalDataset, get_feature_extractor
-from datasets.utils.incremental_dataset import get_previous_train_loader
+from datasets.utils.incremental_dataset import get_not_train_dataset
 from argparse import Namespace
 from datasets.transforms.denormalization import DeNormalize
+from models.utils.putil import make_transform
 
 
-class MyCIFAR100(CIFAR100):
-    """
-    Overrides the CIFAR10 dataset to change the getitem function.
-    """
+def ori_transform():
+    resnet_sz_resize = 256
+    resnet_sz_crop = 224
+    resnet_mean = [0.485, 0.456, 0.406]
+    resnet_std = [0.229, 0.224, 0.225]
+    resnet_transform = transforms.Compose([
+        transforms.Resize(resnet_sz_resize),
+        transforms.CenterCrop(resnet_sz_crop),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=resnet_mean, std=resnet_std)
+    ])
 
-    def __init__(self, root, train=True, transform=None, target_transform=None) -> None:
-        self.not_aug_transform = transforms.Compose([transforms.ToTensor()])
+    return resnet_transform
+
+
+class MyDataset(Dataset):
+    def __init__(self, root, train=True, transform=None, target_transform=None):
+        self.data = []  # 修改的，不如初始化的时候就全部都读进来分成数据和label????
+        self.targets = []
+        fh = open(root, 'r')
+        for line in fh:
+            line = line.rstrip()
+            words = line.split()
+            # imgs.append((words[0], int(words[1])))
+            # img = Image.open(words[0]).convert('RGB')
+            self.data.append((words[0]))
+            self.targets.append(int(words[1]))
+        # self.imgs = imgs
+        # self.data = np.vstack(self.data)
         self.transform = transform
         self.target_transform = target_transform
+        self.not_aug_transform = ori_transform()
         self.attributes = []
         self.trans = []
-        super(MyCIFAR100, self).__init__(root, train, transform, target_transform, download=True)
 
     def set_att(self, att_name, att_data, att_transform=None):
         self.attributes.append(att_name)
@@ -31,24 +54,16 @@ class MyCIFAR100(CIFAR100):
     def get_att_names(self):
         return self.attributes
 
-    def __getitem__(self, index: int):
-        """
-        Gets the requested element from the dataset.
-        :param index: index of the element to be returned
-        :returns: tuple: (image, target) where target is index of the target class.
-        """
-        img, target = self.data[index], self.targets[index]
-
-        # to return a PIL Image
-        img = Image.fromarray(img, mode='RGB')
+    def __getitem__(self, index):
+        fn, target = self.data[index], self.targets[index]
+        img = Image.open(fn).convert('RGB')
+        # img = Image.fromarray(img, mode='RGB')
         original_img = img.copy()
         not_aug_img = self.not_aug_transform(original_img)
-
         if self.transform is not None:
             img = self.transform(img)
         if self.target_transform is not None:
             target = self.target_transform(target)
-
         ret_tuple = (img, target, not_aug_img)
         for i, att in enumerate(self.attributes):
             att_data = getattr(self, att)[index]
@@ -61,9 +76,12 @@ class MyCIFAR100(CIFAR100):
 
         return ret_tuple
 
+    def __len__(self):
+        return len(self.imgs)
 
-class SequentialCIFAR100(IncrementalDataset):
-    NAME = 'seq-cifar100'
+
+class SequentialCUB200(IncrementalDataset):
+    NAME = 'seq-cub200'
     SETTING = 'class-il'
     N_CLASSES_PER_TASK = 20
     N_TASKS = 5
@@ -79,7 +97,7 @@ class SequentialCIFAR100(IncrementalDataset):
         self.n_channel = 3
         self.n_imsize1 = 32
         self.n_imsize2 = 32
-        super(SequentialCIFAR100, self).__init__(args)
+        super(SequentialCUB200, self).__init__(args)
 
         if self.args.featureNet:
             self.args.transform = 'pytorch'
@@ -102,30 +120,27 @@ class SequentialCIFAR100(IncrementalDataset):
             self.dnormalization_transform = None
             self.train_transform = transforms.Compose([
                 transforms.RandomCrop(32, padding=4),
-                transforms.RandomHorizontalFlip(),]
-               )
+                transforms.RandomHorizontalFlip(),
+                transforms.ToTensor()])
             self.test_transform = transforms.Compose([transforms.ToTensor()])
 
     def get_data_loaders(self):
 
-        train_dataset = MyCIFAR100(self.args.root + 'CIFAR100', train=True, transform=self.train_transform)
+        train_dataset = MyDataset(self.args.root + 'train.txt', train=True, transform=make_transform(True))
         if self.args.validation:
             train_dataset, test_dataset = get_train_val(train_dataset,
                                                         self.test_transform, self.NAME)
         else:
-            test_dataset = MyCIFAR100(self.args.root + 'CIFAR100', train=False, transform=self.test_transform)
+            test_dataset = MyDataset(self.args.root + 'test.txt', train=False, transform=make_transform(False))
 
-        train, test = getfeature_loader(train_dataset, test_dataset, setting=self, train_transforms=self.train_transform, test_transforms=self.test_transform)
+        train, test = getfeature_loader(train_dataset, test_dataset, setting=self)
         return train, test
 
     def not_aug_dataloader(self, batch_size):
-        transform = transforms.Compose(
-            [transforms.Resize(224), transforms.ToTensor(), self.normalization_transform])
+        train_dataset = MyDataset(self.args.root + 'CIFAR10', train=True, transform=make_transform(False))
+        train_dataset = get_not_train_dataset(train_dataset, batch_size, self)
 
-        train_dataset = MyCIFAR100(self.args.root + 'CIFAR10', train=True, transform=transform)
-        train_loader = get_previous_train_loader(train_dataset, batch_size, self)
-
-        return train_loader
+        return train_dataset
 
     def get_transform(self):
         transform = transforms.Compose(

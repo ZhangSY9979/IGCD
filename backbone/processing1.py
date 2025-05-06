@@ -50,7 +50,6 @@ class TrainerVaDE:
                 loss.backward()
                 optimizer.step()
                 total_loss += loss.item()
-            print('Training Autoencoder... Epoch: {}, Loss: {}'.format(epoch, total_loss))
         self.train_GMM()  # training a GMM for initialize the VaDE
         self.save_weights_for_VaDE()  # saving weights for the VaDE
 
@@ -71,7 +70,6 @@ class TrainerVaDE:
         self.gmm.fit(z.cpu().detach().numpy())
         GMM_labels = self.gmm.predict(z.cpu().detach().numpy())
         acc = self.cluster_acc(np.array(y, dtype=np.int64), np.array(GMM_labels, dtype=np.int64))
-        print("GMM acc:", acc[0])
 
     def save_weights_for_VaDE(self):
         """Saving the pretrained weights for the encoder, decoder, pi, mu, var.
@@ -115,8 +113,6 @@ class TrainerVaDE:
             loss.backward()
             self.optimizer.step()
             total_loss += loss.item()
-            # print('After backward: {}'.format(self.VaDE.pi_prior))
-        print('Training VaDE... Epoch: {}, Loss: {}'.format(epoch, total_loss))
 
     def test_VaDE(self, epoch):
         self.VaDE.eval()
@@ -135,7 +131,6 @@ class TrainerVaDE:
                 y_pred.extend(pred.cpu().detach().numpy())
 
             acc = self.cluster_acc(np.array(y_true), np.array(y_pred))
-            print('Testing VaDE... Epoch: {}, Loss: {}, Acc: {}'.format(epoch, total_loss, acc[0]))
 
     def compute_loss(self, x, x_hat, mu, log_var, z):
         p_c = self.VaDE.pi_prior

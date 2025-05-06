@@ -181,7 +181,7 @@ class SequentialTinyImagenet(IncrementalDataset):
             test_dataset = TinyImagenet(self.args.root + 'TINYIMG',
                         train=False, download=True, transform=self.test_transform)
 
-        train, test = getfeature_loader(train_dataset, test_dataset, setting=self)
+        train, test = getfeature_loader(train_dataset, test_dataset, setting=self, train_transforms=self.train_transform, test_transforms=self.test_transform)
         return train, test
 
 
