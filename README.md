@@ -4,6 +4,7 @@
 
 ## Set up
 - using `main_xxx.py` to run experiments.
+- The result is saved in `result'.
 
 ## Dataset
 - CIFAR-10
